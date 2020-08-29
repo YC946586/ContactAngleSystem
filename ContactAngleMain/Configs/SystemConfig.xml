@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <AppSettings>
+    <!--版权所有-->
+    <add Key="CopyRight" Value="CopyRight©：北京博创力讯科技有限公司" />
+    <add Key="swichSpeed0" Value="3s" />
+    <add Key="swichSpeed1" Value="1s" />
+    <add Key="swichSpeed2" Value="0.5s" />
+
+  </AppSettings>
+  <!--连接字符串-->
+  <ConnectionStrings>
+    <!--<add Name="MDBOledbConnection" ConnectionString="provider=Microsoft.JET.OLEDB.4.0;Data Source={0}" />-->
+  </ConnectionStrings>
+  <!--自定义配置节点-->
+  <CustomConfig>
+
+  </CustomConfig>
+  <!--日志配置-->
+  <log4net>
+    <appender name="LogFileAppender" type="log4net.Appender.FileAppender">
+      <file value="log.txt" />
+      <sppendToFile value="true" />
+      <layout type="log4net.Layout.PatternLayout">
+        <geader value="[Header]&#xD;&#xA;" />
+        <footer value="[Footer]&#xD;&#xA;" />
+        <conversionPattern value="%date [%thread] %-5level %logger [%ndc] &lt;%property{auth}&gt; - %message%newline" />
+      </layout>
+    </appender>
+    <root>
+      <level value="ERROR" />
+      <appender-ref ref="LogFileAppender" />
+    </root>
+  </log4net>
+</configuration>

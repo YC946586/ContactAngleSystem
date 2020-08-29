@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactAngleMain", "ContactAngleMain\ContactAngleMain.csproj", "{62CD76D8-02B4-4014-B7DB-B1C59FCB937F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactAngleControl", "ContactAngleControl\ContactAngleControl.csproj", "{F9F832B3-A209-4E83-908B-548921B3D9A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactAngleEntity", "ContactAngleModel\ContactAngleEntity.csproj", "{E4B45252-3572-47C7-B38C-C3A222AC7470}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactAngleCommon", "ContactAngleCommon\ContactAngleCommon.csproj", "{DED41329-8BC5-472A-947C-24DDAA161061}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactAngle.Config", "ContactAngle.Config\ContactAngle.Config.csproj", "{EC718E8E-9886-4DA5-B861-6527B3267DB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactAngleUtils", "ContactAngleUtils\ContactAngleUtils.csproj", "{1323C296-7091-4E83-8FFB-8D708312B049}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62CD76D8-02B4-4014-B7DB-B1C59FCB937F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62CD76D8-02B4-4014-B7DB-B1C59FCB937F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62CD76D8-02B4-4014-B7DB-B1C59FCB937F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62CD76D8-02B4-4014-B7DB-B1C59FCB937F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F832B3-A209-4E83-908B-548921B3D9A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F832B3-A209-4E83-908B-548921B3D9A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F832B3-A209-4E83-908B-548921B3D9A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F832B3-A209-4E83-908B-548921B3D9A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4B45252-3572-47C7-B38C-C3A222AC7470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4B45252-3572-47C7-B38C-C3A222AC7470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4B45252-3572-47C7-B38C-C3A222AC7470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4B45252-3572-47C7-B38C-C3A222AC7470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DED41329-8BC5-472A-947C-24DDAA161061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DED41329-8BC5-472A-947C-24DDAA161061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DED41329-8BC5-472A-947C-24DDAA161061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DED41329-8BC5-472A-947C-24DDAA161061}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC718E8E-9886-4DA5-B861-6527B3267DB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC718E8E-9886-4DA5-B861-6527B3267DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC718E8E-9886-4DA5-B861-6527B3267DB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC718E8E-9886-4DA5-B861-6527B3267DB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1323C296-7091-4E83-8FFB-8D708312B049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1323C296-7091-4E83-8FFB-8D708312B049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1323C296-7091-4E83-8FFB-8D708312B049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1323C296-7091-4E83-8FFB-8D708312B049}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

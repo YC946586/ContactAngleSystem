@@ -1,0 +1,5 @@
+D:\project\接触角\ContactAngleModel\bin\Debug\ContactAngleModel.dll
+D:\project\接触角\ContactAngleModel\bin\Debug\ContactAngleModel.pdb
+D:\project\接触角\ContactAngleModel\obj\Debug\ContactAngleEntity.csprojResolveAssemblyReference.cache
+D:\project\接触角\ContactAngleModel\obj\Debug\ContactAngleModel.dll
+D:\project\接触角\ContactAngleModel\obj\Debug\ContactAngleModel.pdb
