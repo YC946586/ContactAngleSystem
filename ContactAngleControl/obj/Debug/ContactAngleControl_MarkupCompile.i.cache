@@ -4,17 +4,17 @@
 library
 C#
 .cs
-D:\project\接触角\ContactAngleControl\obj\Debug\
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleControl\obj\Debug\
 ContactAngleControl
 none
 false
 DEBUG;TRACE
 
-6-2058692040
+131457873406
 
-13-2006035756
-151191311908
-UCFooter.xaml;UCHeader.xaml;UCMain.xaml;UCMenu.xaml;UCOperateMenu.xaml;UCToolBar.xaml;
+33-1500313980
+741793801111
+UCFooter.xaml;UCHeader.xaml;UCMain.xaml;UCMenu.xaml;UCOperateMenu.xaml;UCToolBar.xaml;View\Template\MsgBox.xaml;View\UC\CameraSettings.xaml;View\UC\ContactAngle.xaml;View\UC\SurfaceEnergy.xaml;View\UC\SurfaceTension.xaml;View\UC\TestSet.xaml;View\Win\TestQueryPageView.xaml;
 
-False
+True
 

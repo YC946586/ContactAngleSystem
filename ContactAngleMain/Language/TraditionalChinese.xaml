@@ -3,8 +3,6 @@
                     xmlns:local="clr-namespace:ContactAngleMain.Language"
                     xmlns:sys="clr-namespace:System;assembly=mscorlib"
                     >
-    <sys:String x:Key="OK">確定</sys:String>
-    <sys:String x:Key="Cancel">取消</sys:String>
     <sys:String x:Key="CompanyName">
         廣東北斗精密儀器有限公司
     </sys:String>
@@ -69,4 +67,140 @@
     <sys:String x:Key="Current">
         當前
     </sys:String>
+
+    <!--操作按钮-->
+    <sys:String x:Key="Query">查詢</sys:String>
+    <sys:String x:Key="Add">增加</sys:String>
+    <sys:String x:Key="Edit">編輯</sys:String>
+    <sys:String x:Key="Delete">刪除</sys:String>
+    <sys:String x:Key="Export">導出</sys:String>
+    <sys:String x:Key="OK">確定</sys:String>
+    <sys:String x:Key="Cancel">取消</sys:String>
+    <sys:String x:Key="New">新建</sys:String>
+    <sys:String x:Key="Open">打開</sys:String>
+    <sys:String x:Key="Save">保存</sys:String>
+    <sys:String x:Key="Select">選額</sys:String>
+    <sys:String x:Key="Judge">判斷</sys:String>
+    <sys:String x:Key="Start">開始</sys:String>
+    <sys:String x:Key="ToDetect">重新檢測</sys:String>
+    <sys:String x:Key="Default">恢復默認</sys:String>
+    <sys:String x:Key="Start measuring">開始測量</sys:String>
+    <!--02圖-->
+    <sys:String x:Key="AngleQuerySystem">角度查詢系統</sys:String>
+    <sys:String x:Key="TensionQuerySystem">張力查詢系統</sys:String>
+    <sys:String x:Key="SurfaceEnergQuerySystem">表面能查詢系統</sys:String>
+    <sys:String x:Key="DeleteCurrentRecord">刪除當前記錄</sys:String>
+    <sys:String x:Key="Deleteall">刪除全部記錄</sys:String>
+    <sys:String x:Key="All">全部</sys:String>
+    <sys:String x:Key="number">序號</sys:String>
+    <sys:String x:Key="Thetestdate">測試日期</sys:String>
+    <sys:String x:Key="The test of time">測試時間</sys:String>
+    <sys:String x:Key="The operator">操作者</sys:String>
+    <sys:String x:Key="Sample number">樣品編號</sys:String>
+    <sys:String x:Key="The name of the solid">固體名稱</sys:String>
+    <sys:String x:Key="The left contact Angle">左接觸角</sys:String>
+    <sys:String x:Key="Right contact Angle">右接觸角</sys:String>
+    <sys:String x:Key="Differential contact Angle">差額接觸角</sys:String>
+    <sys:String x:Key="Evaluation contact Angle">評價接觸角</sys:String>
+    <sys:String x:Key="A few lines of inclination">幾綫傾斜角</sys:String>
+    <sys:String x:Key="Forward Angle">前進傾斜角</sys:String>
+    <sys:String x:Key="Receding Angle">後退傾斜角</sys:String>
+
+    <!--接触角-->
+    <sys:String x:Key="Contact Angle">接觸角</sys:String>
+    <sys:String x:Key="FileName">文件名稱</sys:String>
+    <sys:String x:Key="DeleteFile">刪除文件</sys:String>
+    <sys:String x:Key="Test information">實驗信息</sys:String>
+    
+    <sys:String x:Key="Test data">實驗數據</sys:String>
+    <sys:String x:Key="The test data">實驗數據</sys:String>
+    <sys:String x:Key="The name of the liquid">液體名稱</sys:String>
+    <sys:String x:Key="Name of the foreign minister">外相名稱</sys:String>
+    <sys:String x:Key="Test method for">實驗方法</sys:String>
+    <sys:String x:Key="The test environment">實驗環境</sys:String>
+    <sys:String x:Key="Test date">實驗日期</sys:String>
+    <sys:String x:Key="Operator">操作者</sys:String>
+    <sys:String x:Key="Test unit">實驗單位</sys:String>
+    <sys:String x:Key="Manufacturers">仪器厂家</sys:String>
+    <sys:String x:Key="Remark">備注</sys:String>
+    <sys:String x:Key="Criteria">判斷標準</sys:String>
+    <sys:String x:Key="Baseline on-line">基准值上綫</sys:String>
+    <sys:String x:Key="Baseline off line">基准值下綫</sys:String>
+    <!--接触角右边-->
+    <sys:String x:Key="Minimum contact Angle">最小接觸角</sys:String>
+    <sys:String x:Key="Maximum contact Angle">最大接觸角</sys:String>
+    <sys:String x:Key="The standard deviatio">標準差</sys:String>
+    <sys:String x:Key="Forward contact Angle">前进接觸角</sys:String>
+    <sys:String x:Key="Backward contact Angle">后退接觸角</sys:String>
+    <sys:String x:Key="Lag Angle">滞后角</sys:String>
+    <sys:String x:Key="Rolling Angle">滾動角</sys:String>
+    <sys:String x:Key="Droplet size">液滴體積</sys:String>
+    <sys:String x:Key="Droplet diameter">液滴直径</sys:String>
+
+    <!--表面能-->
+    <sys:String x:Key="Contact Angle1">接触角1</sys:String>
+    <sys:String x:Key="Contact Angle2">接触角2</sys:String>
+    <sys:String x:Key="Contact Angle3">接触角3</sys:String>
+    <sys:String x:Key="Surface energy">表面能</sys:String>
+    <sys:String x:Key="Estimation method">估算方法</sys:String>
+    <sys:String x:Key="Solid polar componen">固體极性分量</sys:String>
+    <sys:String x:Key="Dispersion component of solid">固體色散分量</sys:String>
+    <sys:String x:Key="Solid hydrogen bonding force">固體氢键力</sys:String>
+    <sys:String x:Key="solid van der Waals component">固體范德华分量</sys:String>
+    <sys:String x:Key="solid Lewis acid component">固體路易斯酸分量</sys:String>
+    <sys:String x:Key="lewis base component of the solid">固體路易斯碱分量</sys:String>
+    <sys:String x:Key="Solid surface energy">固體表面能</sys:String>
+    <!--表面张力-->
+    <sys:String x:Key="SurfaceTension">表面張力</sys:String>
+    <sys:String x:Key="liquid density">液體密度</sys:String>
+    <sys:String x:Key="Foreign minister density">外相密度</sys:String>
+    <sys:String x:Key="Refer to the size">參考尺寸</sys:String>
+    <sys:String x:Key="G cm3">克/立方厘米</sys:String>
+    <sys:String x:Key="mm">毫米</sys:String>
+    <sys:String x:Key="Density difference">密度差</sys:String>
+    <sys:String x:Key="Size amplification">尺寸放大</sys:String>
+    <sys:String x:Key="Maximum width of droplet">液滴最大宽度</sys:String>
+    <sys:String x:Key="Droplet calibration width">液滴标定宽度</sys:String>
+    <sys:String x:Key="Amplification factor">放大因子</sys:String>
+
+    <!--相机设置-->
+    <sys:String x:Key="Camera Settings">相機設置</sys:String>
+    <sys:String x:Key="Camera type">攝像機類型</sys:String>
+    <sys:String x:Key="ordinary">普通</sys:String>
+    <sys:String x:Key="High speed">高速</sys:String>
+    <sys:String x:Key="BrightnessContrastThreshold">亮度/对比度/阈值</sys:String>
+    <sys:String x:Key="brightness">亮度</sys:String>
+    <sys:String x:Key="contrast">对比度</sys:String>
+    <sys:String x:Key="Threshold">閾值</sys:String>
+    <sys:String x:Key="Slow to save Settings">慢存设置</sys:String>
+    <sys:String x:Key="total number of frames">总帧数</sys:String>
+    <sys:String x:Key="Storage interval">存儲間隔</sys:String>
+    <sys:String x:Key="frame">帧</sys:String>
+    <sys:String x:Key="resolution of the">分辨率</sys:String>
+    <sys:String x:Key="width">宽度(W):</sys:String>
+    <sys:String x:Key="height">高度(H):</sys:String>
+    <sys:String x:Key="pixel">像素</sys:String>
+    <sys:String x:Key="Quick save Settings">快存设置</sys:String>
+    <sys:String x:Key="Frame triggered photograph">帧触发拍照</sys:String>
+    <sys:String x:Key="Frame stop taking pictures">帧停止拍照</sys:String>
+    <sys:String x:Key="Adaptive window">自适应窗口</sys:String>
+    <sys:String x:Key="delay">延遲</sys:String>
+    <sys:String x:Key="Began to take pictures">s开始拍照/录制</sys:String>
+    <sys:String x:Key="Video frame Settings">视频帧数设置</sys:String>
+    <sys:String x:Key="frameS">帧/s</sys:String>
+    <sys:String x:Key="from">從</sys:String>
+
+
+    <!--试验设置-->
+    <sys:String x:Key="Test set">實驗設置</sys:String>
+    <sys:String x:Key="Control mode">控制模式</sys:String>
+    <sys:String x:Key="Drip speed">滴液速度ul/min</sys:String>
+    <sys:String x:Key="Drip quantity">滴液量（ul）</sys:String>
+    <sys:String x:Key="Time delay">延時（s）</sys:String>
+    <sys:String x:Key="video">錄像</sys:String>
+    <sys:String x:Key="video Test">錄像+测试</sys:String>
+    <sys:String x:Key="The first step">第一步</sys:String>
+    <sys:String x:Key="The second step">第二步</sys:String>
+    <sys:String x:Key="The third step">第三步</sys:String>
+    <sys:String x:Key="Pay attention to the prompt">注：設置好所有參數后，點擊開始測試按钮自動囘到主界面開始測試</sys:String>
 </ResourceDictionary>

@@ -1,0 +1,117 @@
+﻿<UserControl x:Class="ContactAngleControl.View.UC.ContactAngle"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ContactAngleControl.View.UC"
+             xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
+             xmlns:controls="clr-namespace:YCCustomControl.Controls;assembly=YCCustomControl" 
+             xmlns:uc="clr-namespace:ContactAngleControl.ViewModel.UC"
+             mc:Ignorable="d" 
+             >
+    <UserControl.DataContext>
+        <uc:ContactAngleViewModel/>
+    </UserControl.DataContext>
+    <Grid>
+        <controls:BoderContent Hander="{DynamicResource Contact Angle}" Width="800" Height="800">
+            <Grid Margin="20 10 20 0">
+              
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal" >
+                            <TextBlock Text="{DynamicResource FileName}"  VerticalAlignment="Center"/>
+                            <TextBox  Style="{DynamicResource TextBoxStyleNormal}" Margin="10 0 0 0"/>
+                        </StackPanel>
+                        <TextBox Text="{DynamicResource Test information}" Style="{DynamicResource TextBoxStyleLeftBor}"/>
+                        <Border BorderBrush="#EAEBED" BorderThickness="1">
+                            <Grid Margin=" 0 10 0 0 ">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Text="{DynamicResource Sample number}" Style="{StaticResource TextBlockStyleDefault}"/>
+                                    <TextBlock Text="{DynamicResource The name of the solid}" Style="{StaticResource TextBlockStyleDefault}"/>
+                                    <TextBlock Text="{DynamicResource The name of the liquid}" Style="{StaticResource TextBlockStyleDefault}"/>
+                                    <TextBlock Text="{DynamicResource Name of the foreign minister}" Style="{StaticResource TextBlockStyleDefault}"/>
+                                    <TextBlock Text="{DynamicResource Test method for}" Style="{StaticResource TextBlockStyleDefault}"/>
+                                    <TextBlock Text="{DynamicResource The test environment}" Style="{StaticResource TextBlockStyleDefault}"/>
+                                    <TextBlock Text="{DynamicResource Test date}" Style="{StaticResource TextBlockStyleDefault}"/>
+                                    <TextBlock Text="{DynamicResource Operator}" Style="{StaticResource TextBlockStyleDefault}"/>
+                                    <TextBlock Text="{DynamicResource Test unit}" Style="{StaticResource TextBlockStyleDefault}"/>
+                                    <TextBlock Text="{DynamicResource Manufacturers}" Style="{StaticResource TextBlockStyleDefault}"/>
+                                    <TextBlock Text="{DynamicResource Remark}" Style="{StaticResource TextBlockStyleDefault}"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Vertical" Grid.Column="1">
+                                    <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>
+                                    <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>
+                                    <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>
+                                    <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>
+                                    <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>
+                                    <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>
+                                    <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>
+                                    <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>
+                                    <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>
+                                    <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>
+                                    <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>
+                                </StackPanel>
+                            </Grid>
+                        </Border>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical"  Grid.Column="1" Margin="30 0 0 0">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{DynamicResource DeleteFile}" VerticalAlignment="Center"/>
+                            <ComboBox  Style="{StaticResource StyleComboBoxDefault}" Width="150" Margin="10 0 0 0"/>
+                            <Button  Content="{DynamicResource OK}" Width="60" Height="28" Style="{StaticResource ButtonStyleDefault}"/>
+                        </StackPanel>
+                        <TextBox Text="{DynamicResource The test data}" Style="{DynamicResource TextBoxStyleLeftBor}"/>
+
+                        <Border BorderBrush="#EAEBED" BorderThickness="1">
+                            <StackPanel Orientation="Vertical" Margin="0 5 0 0">
+                                <Grid>
+                                    <StackPanel  Orientation="Horizontal" HorizontalAlignment="Right">
+                                        <TextBlock Text="{DynamicResource Select}"  Foreground="#9A9A9A"/>
+                                        <TextBlock Text="{DynamicResource Judge}" Foreground="#9A9A9A" Margin="38 0"/>
+                                    </StackPanel>
+                                </Grid>
+                                <ListBox ItemsSource="{Binding ListGroups}" Grid.Row="1" Style="{DynamicResource ListBoxStyleDefault}"/>
+
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+
+
+                <TextBox Text="{DynamicResource Criteria}" Grid.Row="1" Style="{DynamicResource TextBoxStyleLeftBor}"/>
+                <Border BorderBrush="#EAEBED" BorderThickness="1"  Grid.Row="2">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center"  Margin="55 0 0 0">
+                        <TextBlock Text="{DynamicResource Baseline on-line}" Margin="0" Style="{StaticResource TextBlockStyleDefault}"/>
+                        <TextBox  Style="{DynamicResource TextBoxStyleNormal}" Margin="5 3 0 0"/>
+
+                        <TextBlock Text="{DynamicResource Baseline off line}" Margin="40 0 0 0" Style="{StaticResource TextBlockStyleDefault}"/>
+                        <TextBox  Style="{DynamicResource TextBoxStyleNormal}" Margin="5 3 0 0"/>
+                    </StackPanel>
+                </Border>
+                <StackPanel Orientation="Horizontal" Margin="0 10 0 0"  VerticalAlignment="Center" Grid.Row="3" HorizontalAlignment="Center">
+                    <Button  Content="{DynamicResource New}" Width="60" Style="{StaticResource ButtonStyleDefault}"/>
+                    <Button  Content="{DynamicResource Open}" Width="60"  Style="{StaticResource ButtonStyleDefault}"/>
+                    <Button  Content="{DynamicResource Save}" Command="{Binding SaveCommand}" Width="60"  Style="{StaticResource ButtonStyleDefault}"/>
+                    <Button  Content="{DynamicResource Start}" Width="60"  Style="{StaticResource ButtonStyleEnabledFalse}"/>
+                    <Button  Content="{DynamicResource Cancel}" Command="{x:Static wpf:DialogHost.CloseDialogCommand}"  Width="60"  Style="{StaticResource ButtonStyleDel}"/>
+                </StackPanel>
+
+            </Grid>
+        </controls:BoderContent>
+    </Grid>
+</UserControl>

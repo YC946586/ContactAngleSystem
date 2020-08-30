@@ -7,3 +7,14 @@ D:\project\接触角\ContactAngleCommon\bin\Debug\log4net.xml
 D:\project\接触角\ContactAngleCommon\obj\Debug\ContactAngleCommon.csprojResolveAssemblyReference.cache
 D:\project\接触角\ContactAngleCommon\obj\Debug\ContactAngleCommon.dll
 D:\project\接触角\ContactAngleCommon\obj\Debug\ContactAngleCommon.pdb
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleCommon\bin\Debug\ContactAngleCommon.dll
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleCommon\bin\Debug\ContactAngleCommon.pdb
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleCommon\bin\Debug\ContactAngle.Config.dll
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleCommon\bin\Debug\log4net.dll
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleCommon\bin\Debug\ContactAngle.Config.pdb
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleCommon\bin\Debug\log4net.xml
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleCommon\obj\Debug\ContactAngleCommon.csprojAssemblyReference.cache
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleCommon\obj\Debug\ContactAngleCommon.csproj.CoreCompileInputs.cache
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleCommon\obj\Debug\ContactAngleCommon.csproj.CopyComplete
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleCommon\obj\Debug\ContactAngleCommon.dll
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleCommon\obj\Debug\ContactAngleCommon.pdb

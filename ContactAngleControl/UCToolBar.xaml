@@ -7,31 +7,31 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <ToolBar VerticalAlignment="Center" Background="Transparent">
-        <Button Style="{StaticResource RadiusButton}" Height="22" Margin="10,0" VerticalContentAlignment="Center">
+        <Button Style="{StaticResource RadiusButton}" Click="Button_Click" Tag="ContactAngle" Height="22" Margin="10,0" VerticalContentAlignment="Center">
             <Button.Content>
                 <Image Source="Img/ToolMenu/1.png" Height="14"></Image>
             </Button.Content>
         </Button>
         <Separator></Separator>
-        <Button Style="{StaticResource RadiusButton}" Height="22" Margin="10,0" VerticalContentAlignment="Center">
+        <Button Style="{StaticResource RadiusButton}" Click="Button_Click" Tag="CameraSettings" Height="22" Margin="10,0" VerticalContentAlignment="Center">
             <Button.Content>
                 <Image Source="Img/ToolMenu/2.png" Height="14"></Image>
             </Button.Content>
         </Button>
         <Separator></Separator>
-        <Button Style="{StaticResource RadiusButton}" Height="22" Margin="10,0" VerticalContentAlignment="Center">
+        <Button Style="{StaticResource RadiusButton}" Click="Button_Click" Tag="SurfaceTension" Height="22" Margin="10,0" VerticalContentAlignment="Center">
             <Button.Content>
                 <Image Source="Img/ToolMenu/3.png" Height="14"></Image>
             </Button.Content>
         </Button>
         <Separator></Separator>
-        <Button Style="{StaticResource RadiusButton}" Height="22" Margin="10,0" VerticalContentAlignment="Center">
+        <Button Style="{StaticResource RadiusButton}" Click="Button_Click" Tag="ContactAngle" Height="22" Margin="10,0" VerticalContentAlignment="Center">
             <Button.Content>
                 <Image Source="Img/ToolMenu/4.png" Height="14"></Image>
             </Button.Content>
         </Button>
         <Separator></Separator>
-        <Button Style="{StaticResource RadiusButton}" Height="22" Margin="10,0" VerticalContentAlignment="Center">
+        <Button Style="{StaticResource RadiusButton}"  Height="22" Margin="10,0" VerticalContentAlignment="Center">
             <Button.Content>
                 <Image Source="Img/ToolMenu/5.png" Height="14"></Image>
             </Button.Content>
@@ -60,5 +60,9 @@
                 <Image Source="Img/ToolMenu/9.png" Height="14"></Image>
             </Button.Content>
         </Button>
+
+        <Button Style="{StaticResource RadiusButton}" Click="Button_Click" Content="表面能界面" Tag="SurfaceEnergy" Height="22" Margin="10,0" VerticalContentAlignment="Center"/>
+        <Button Style="{StaticResource RadiusButton}" Click="Button_Click" Content="试验设置" Tag="TestSet" Height="22" Margin="10,0" VerticalContentAlignment="Center"/>
+        
     </ToolBar>
 </UserControl>

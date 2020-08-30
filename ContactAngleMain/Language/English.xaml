@@ -74,4 +74,143 @@
     <sys:String x:Key="Current">
         Current
     </sys:String>
+
+
+    <!--操作按钮-->
+    <sys:String x:Key="Query">
+        Query
+    </sys:String>
+    <sys:String x:Key="Add">
+        Add
+    </sys:String>
+    <sys:String x:Key="Edit">
+        Edit
+    </sys:String>
+    <sys:String x:Key="Delete">Delete</sys:String>
+    <sys:String x:Key="Export">導出</sys:String>
+    <sys:String x:Key="New">New</sys:String>
+    <sys:String x:Key="Open">Open</sys:String>
+    <sys:String x:Key="Save">Save</sys:String>
+    <sys:String x:Key="Select">Select</sys:String>
+    <sys:String x:Key="Judge">Judge</sys:String>
+    <sys:String x:Key="Start">Start</sys:String>
+    <sys:String x:Key="ToDetect">ToDetect</sys:String>
+    <sys:String x:Key="Default">Default</sys:String>
+    <sys:String x:Key="Start measuring">Start measuring</sys:String>
+    <!--02圖-->
+    <sys:String x:Key="AngleQuerySystem">Angle Query System</sys:String>
+    <sys:String x:Key="TensionQuerySystem">Tension query system</sys:String>
+    <sys:String x:Key="SurfaceEnergQuerySystem">Surface energy query system</sys:String>
+    <sys:String x:Key="DeleteCurrentRecord">Delete current record</sys:String>
+    <sys:String x:Key="Deleteall">Delete all records</sys:String>
+    <sys:String x:Key="All">All</sys:String>
+    <sys:String x:Key="number">number</sys:String>
+    <sys:String x:Key="Thetestdate">The test date</sys:String>
+    <sys:String x:Key="The test of time">The test of time</sys:String>
+    <sys:String x:Key="The operator">The operator</sys:String>
+    <sys:String x:Key="Sample number">Sample number</sys:String>
+    <sys:String x:Key="The name of the solid">The name of the solid</sys:String>
+    <sys:String x:Key="The left contact Angle">The left contact Angle</sys:String>
+    <sys:String x:Key="Right contact Angle">Right contact Angle</sys:String>
+    <sys:String x:Key="Differential contact Angle">Differential contact Angle</sys:String>
+    <sys:String x:Key="Evaluation contact Angle">Evaluation contact Angle</sys:String>
+    <sys:String x:Key="A few lines of inclination">A few lines of inclination</sys:String>
+    <sys:String x:Key="Forward Angle">Forward Angle</sys:String>
+    <sys:String x:Key="Receding Angle">Receding Angle</sys:String>
+
+    <!--接触角-->
+    <sys:String x:Key="Contact Angle">Contact Angle</sys:String>
+    <sys:String x:Key="FileName">File Name</sys:String>
+    <sys:String x:Key="DeleteFile">Delete File</sys:String>
+    <sys:String x:Key="Test information">Test information</sys:String>
+    <sys:String x:Key="Test data">Test data</sys:String>
+    <sys:String x:Key="The test data">The test data</sys:String>
+    <sys:String x:Key="The name of the liquid">name of the liquid</sys:String>
+    <sys:String x:Key="Name of the foreign minister">Name of the foreign minister</sys:String>
+    <sys:String x:Key="Test method for">Test method for</sys:String>
+    <sys:String x:Key="The test environment">The test environment</sys:String>
+    <sys:String x:Key="Test date">Test date</sys:String>
+    <sys:String x:Key="Operator">Operator</sys:String>
+    <sys:String x:Key="Test unit">Test unit</sys:String>
+    <sys:String x:Key="Manufacturers">Manufacturers</sys:String>
+    <sys:String x:Key="Remark">Remark</sys:String>
+    <sys:String x:Key="Criteria">Criteria</sys:String>
+    <sys:String x:Key="Baseline on-line">Baseline on-line</sys:String>
+    <sys:String x:Key="Baseline off line">Baseline off line</sys:String>
+    <!--接触角右边-->
+    <sys:String x:Key="Minimum contact Angle">Minimum contact Angle</sys:String>
+    <sys:String x:Key="Maximum contact Angle">Maximum contact Angle</sys:String>
+    <sys:String x:Key="The standard deviatio">The standard deviatio</sys:String>
+    <sys:String x:Key="Forward contact Angle">Forward contact Angle</sys:String>
+    <sys:String x:Key="Backward contact Angle">Backward contact Angle</sys:String>
+    <sys:String x:Key="Lag Angle">Lag Angle</sys:String>
+    <sys:String x:Key="Rolling Angle">Rolling Angle</sys:String>
+    <sys:String x:Key="Droplet size">Droplet size</sys:String>
+    <sys:String x:Key="Droplet diameter">Droplet diameter</sys:String>
+    
+    <!--表面能-->
+    <sys:String x:Key="Contact Angle1">"Contact Angle1</sys:String>
+    <sys:String x:Key="Contact Angle2">Contact Angle2</sys:String>
+    <sys:String x:Key="Contact Angle3">Contact Angle3</sys:String>
+    <sys:String x:Key="Surface energy">Surface energy</sys:String>
+    <sys:String x:Key="Estimation method">Estimation method</sys:String>
+    <sys:String x:Key="Solid polar componen">Solid polar componen</sys:String>
+    <sys:String x:Key="Dispersion component of solid">Dispersion component of solid</sys:String>
+    <sys:String x:Key="Solid hydrogen bonding force">Solid hydrogen bonding force</sys:String>
+    <sys:String x:Key="solid van der Waals component">solid van der Waals component</sys:String>
+    <sys:String x:Key="solid Lewis acid component">solid Lewis acid component</sys:String>
+    <sys:String x:Key="lewis base component of the solid">lewis base component of the solid</sys:String>
+    <sys:String x:Key="Solid surface energy">Solid surface energy</sys:String>
+    <!--表面张力-->
+    <sys:String x:Key="SurfaceTension">Surface tension</sys:String>
+    <sys:String x:Key="liquid density">liquid density</sys:String>
+    <sys:String x:Key="Foreign minister density">Foreign minister density</sys:String>
+    <sys:String x:Key="Refer to the size">Refer to the size</sys:String>
+    <sys:String x:Key="G cm3">G/cm3</sys:String>
+    <sys:String x:Key="mm">mm</sys:String>
+    <sys:String x:Key="Density difference">Density difference</sys:String>
+    <sys:String x:Key="Size amplification">Size amplification</sys:String>
+    <sys:String x:Key="Maximum width of droplet">Maximum width of droplet</sys:String>
+    <sys:String x:Key="Droplet calibration width">Droplet calibration width</sys:String>
+    <sys:String x:Key="Amplification factor">Amplification factor</sys:String>
+
+    <!--相机设置-->
+    <sys:String x:Key="Camera Settings">Camera Settings</sys:String>
+    <sys:String x:Key="Camera type">Camera type</sys:String>
+    <sys:String x:Key="ordinary">ordinary</sys:String>
+    <sys:String x:Key="High speed">High speed</sys:String>
+    <sys:String x:Key="BrightnessContrastThreshold">Brightness/contrast/threshold</sys:String>
+    <sys:String x:Key="brightness">brightness</sys:String>
+    <sys:String x:Key="contrast">contrast</sys:String>
+    <sys:String x:Key="Threshold">Threshold</sys:String>
+    <sys:String x:Key="Slow to save Settings">Slow to save Settings</sys:String>
+    <sys:String x:Key="total number of frames">total number of frames</sys:String>
+    <sys:String x:Key="Storage interval">Storage interval</sys:String>
+    <sys:String x:Key="frame">frame</sys:String>
+    <sys:String x:Key="resolution of the">resolution of the</sys:String>
+    <sys:String x:Key="width">width:</sys:String>
+    <sys:String x:Key="height">height:</sys:String>
+    <sys:String x:Key="pixel">pixel</sys:String>
+    <sys:String x:Key="Quick save Settings">Quick save Settings</sys:String>
+    <sys:String x:Key="Frame triggered photograph">Frame triggered photograph</sys:String>
+    <sys:String x:Key="Frame stop taking pictures">Frame stop taking pictures</sys:String>
+    <sys:String x:Key="Adaptive window">Adaptive window</sys:String>
+    <sys:String x:Key="delay">delay</sys:String>
+    <sys:String x:Key="Began to take pictures">Began to take pictures</sys:String>
+    <sys:String x:Key="Video frame Settings">Video frame Settings</sys:String>
+    <sys:String x:Key="from">from</sys:String>
+    <sys:String x:Key="frameS">frame/s</sys:String>
+
+    <!--试验设置-->
+    <sys:String x:Key="Test set">Test set</sys:String>
+    <sys:String x:Key="Control mode">Control mode</sys:String>
+    <sys:String x:Key="Drip speed">rip speed ul/min</sys:String>
+    <sys:String x:Key="Drip quantity">Drip quantity（ul）</sys:String>
+    <sys:String x:Key="Time delay">Time delay（s）</sys:String>
+    <sys:String x:Key="video">video</sys:String>
+    <sys:String x:Key="video Test">video+Test</sys:String>
+    <sys:String x:Key="The first step">The first step</sys:String>
+    <sys:String x:Key="The second step">The second step</sys:String>
+    <sys:String x:Key="The third step">The third step</sys:String>
+    <sys:String x:Key="Pay attention to the prompt">注：设置好所有参数后，点击开始测量按钮自动回到主界面开始测量</sys:String>
 </ResourceDictionary>

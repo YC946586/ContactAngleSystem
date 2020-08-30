@@ -134,6 +134,23 @@ namespace ContactAngleMain
             SwitchFull();
         }
 
+   
+        private void UCHeader_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            try
+            {
+                if (e.LeftButton == MouseButtonState.Pressed)
+                {
+                    this.DragMove();
+                }
+
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
         private void ReStart()
         {
             System.Reflection.Assembly.GetEntryAssembly();
@@ -141,17 +158,6 @@ namespace ContactAngleMain
             System.Diagnostics.Process.Start(startpath + "\\ContactAngleMain.exe");
             Application.Current.Shutdown();
         }
-
-        private void UCHeader_MouseMove(object sender, MouseEventArgs e)
-        {
-            try
-            {
-                this.DragMove();
-            }
-            catch (Exception)
-            {
-
-            }
-        }
+       
     }
 }

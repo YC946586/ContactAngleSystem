@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ContactAngleControl.LogicCore.Common;
+using ContactAngleControl.LogicCore.Interface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,23 @@ namespace ContactAngleControl
         public UCToolBar()
         {
             InitializeComponent();
+        }
+
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var retuest = (sender as Button).Tag + "Dlg";
+                var dialog = ServiceProvider.Instance.Get<IModelDialog>(retuest);
+                dialog.BindDefaultViewModel();
+                bool taskResult = await dialog.ShowDialog();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
         }
     }
 }
