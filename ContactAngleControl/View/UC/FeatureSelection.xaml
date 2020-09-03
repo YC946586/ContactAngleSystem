@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="ContactAngleControl.View.UC.FeatureSelection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ContactAngleControl.View.UC"
+             xmlns:controls="clr-namespace:YCCustomControl.Controls;assembly=YCCustomControl"
+               xmlns:wpf="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:uc="clr-namespace:ContactAngleControl.ViewModel.UC"
+             mc:Ignorable="d" 
+             >
+    <UserControl.DataContext>
+        <uc:FeatureSelectionViewModel/>
+    </UserControl.DataContext>
+    <Grid>
+        <controls:BoderContent Hander="{DynamicResource Feature selection}"  >
+            <Grid Margin="20 10 20 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="45"/>
+                </Grid.RowDefinitions>
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Orientation="Vertical"  >
+                        <TextBox Text="{DynamicResource Automatic fitting method for contact Angle}" Style="{DynamicResource TextBoxStyleLeftBor}"/>
+                        <Border BorderBrush="#EAEBED" BorderThickness="1" Height="{Binding ElementName=bor,Path=ActualHeight}">
+                            <ListBox ItemsSource="{Binding ListGroups}"   Style="{DynamicResource ListBoxStyleDefaultByRadioButtonSelect}"/>
+
+                        </Border>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical"  Grid.Column="1" Margin="30 0 0 0">
+                        <TextBox Text="{DynamicResource Baseline fitting}" Style="{DynamicResource TextBoxStyleLeftBor}"/>
+                        <Border BorderBrush="#EAEBED" BorderThickness="1" Height="{Binding ElementName=bor,Path=ActualHeight}">
+                            <ListBox ItemsSource="{Binding ListGroupsData}"   Style="{DynamicResource ListBoxStyleDefaultByRadioButtonSelect}"/>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+
+                <StackPanel Orientation="Vertical" Grid.Row="1"  Margin="0 10" >
+                    <TextBox Text="{DynamicResource The toolbar}" Style="{DynamicResource TextBoxStyleLeftBor}"/>
+                    <Border BorderBrush="#EAEBED" BorderThickness="1" Height="{Binding ElementName=bor,Path=ActualHeight}">
+                        <Grid Margin="10 15">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Style="{StaticResource RadioButtonStyleDefault}"  Content="{DynamicResource Drop control Z}" />
+                                <RadioButton Style="{StaticResource RadioButtonStyleDefault}" Margin="50 0 0 0" Content="{DynamicResource The turntable R}" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Grid.Row="1" Margin=" 0 10 0 0">
+                                <TextBox  Style="{DynamicResource TextBoxStyleNormal}" Margin="0 0 10 0"/>
+                                <Button  Content="{DynamicResource OK}"   Style="{StaticResource ButtonStyleDefault}"/>
+                            </StackPanel>
+                         
+                        </Grid>
+                    </Border>
+                </StackPanel>
+                <TextBlock Text="{DynamicResource  Note: check is displayed. Check is the default}" Grid.Row="2"  FontSize="12" Foreground="#999999" />
+            </Grid>
+        </controls:BoderContent>
+    </Grid>
+</UserControl>

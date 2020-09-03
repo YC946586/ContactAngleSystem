@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="ContactAngleControl.View.UC.SettingParameters"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ContactAngleControl.View.UC" 
+             xmlns:controls="clr-namespace:YCCustomControl.Controls;assembly=YCCustomControl"
+             mc:Ignorable="d" 
+              >
+    <Grid>
+        <controls:BoderContent Hander="{DynamicResource Setting of fitting parameters}"  >
+            <Grid Margin="20">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Uid="{DynamicResource Circle fitting method to fit points}" Width="250" Margin="26 0 0 0" Style="{DynamicResource TextBoxStyleDefaultByStaticTitle}"/>
+                        <Button  Content="{DynamicResource OK}"  Style="{StaticResource ButtonStyleDefault}"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Uid="{DynamicResource Elliptic fitting method to fit points}" Width="265" Margin="13 10 0 0"   Style="{DynamicResource TextBoxStyleDefaultByStaticTitle}"/>
+                        <Button  Content="{DynamicResource OK}"  Style="{StaticResource ButtonStyleDefault}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Uid="{DynamicResource Ly ap Fitting method fitting points}"  Width="279" Style="{DynamicResource TextBoxStyleDefaultByStaticTitle}"/>
+                        <Button  Content="{DynamicResource OK}"  Style="{StaticResource ButtonStyleDefault}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Uid="{DynamicResource ly sd Fitting method fitting points}"  Width="280" Style="{DynamicResource TextBoxStyleDefaultByStaticTitle}"/>
+                        <Button  Content="{DynamicResource OK}"  Style="{StaticResource ButtonStyleDefault}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Uid="{DynamicResource baseline points}"   Margin="26 0 0 0" Width="255" Style="{DynamicResource TextBoxStyleDefaultByStaticTitle}"/>
+                        <Button  Content="{DynamicResource OK}"  Style="{StaticResource ButtonStyleDefault}"/>
+                    </StackPanel>
+                </StackPanel>
+
+             
+                
+            </Grid>
+        </controls:BoderContent>
+    </Grid>
+</UserControl>

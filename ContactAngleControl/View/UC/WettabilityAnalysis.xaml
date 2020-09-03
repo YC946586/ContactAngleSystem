@@ -1,0 +1,92 @@
+﻿<UserControl x:Class="ContactAngleControl.View.UC.WettabilityAnalysis"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ContactAngleControl.View.UC"
+               xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
+                 xmlns:controls="clr-namespace:YCCustomControl.Controls;assembly=YCCustomControl" 
+             mc:Ignorable="d" 
+            >
+    <Grid>
+        <controls:BoderContent Hander="{DynamicResource WettabilityAnalysis}" Width="800" Height="750">
+            <Grid Margin="20 10 20 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Text="{DynamicResource  SurfaceTension}" Style="{StaticResource TextBlockStyleDefaultByHander}"/>
+                    <TextBox  Style="{DynamicResource TextBoxStyleByAdapt}"   Width="180"   />
+                    <TextBlock  Text="mN/m" Style="{StaticResource TextBlockStyleDefault}"/>
+
+                    <TextBlock Text="{DynamicResource  Contact Angle}" Margin="30 0 0 0" Style="{StaticResource TextBlockStyleDefaultByHander}"/>
+                        <TextBox  Style="{DynamicResource TextBoxStyleByAdapt}"   Width="180"   />
+                    <TextBlock  Text="ｏ" Style="{StaticResource TextBlockStyleDefault}"/>
+                </StackPanel>
+           
+
+                <StackPanel Orientation="Horizontal" Margin="0 10 0 0"  VerticalAlignment="Center" Grid.Row="1" HorizontalAlignment="Center">
+                    <Button  Content="{DynamicResource To calculate}"  Style="{StaticResource ButtonStyleDefault}"/>
+                    <Button  Content="{DynamicResource Delete}"  Style="{StaticResource ButtonStyleDefault}"/>
+                    <Button  Content="{DynamicResource resetDel}"  Style="{StaticResource ButtonStyleDefault}"/>
+                    <Button  Content="{DynamicResource Empty}" Style="{StaticResource ButtonStyleDefault}"/>
+                    <Button  Content="{DynamicResource Export}"  Style="{StaticResource ButtonStyleDefault}"/>
+                </StackPanel>
+                <TextBox Text="{DynamicResource Input information}" Grid.Row="2" Style="{DynamicResource TextBoxStyleLeftBor}"/>
+                
+                <Border Grid.Row="3">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="80"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Orientation="Vertical">
+                            <TextBox Uid="{DynamicResource Sample number}" Style="{DynamicResource TextBoxStyleDefaultByTitle}"/>
+                            <TextBox Uid="{DynamicResource Test unit}" Style="{DynamicResource TextBoxStyleDefaultByTitle}"/>
+                            <TextBox Uid="{DynamicResource The test environment}" Style="{DynamicResource TextBoxStyleDefaultByTitle}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Grid.Column="1">
+                            <TextBox Uid="{DynamicResource Test date}" Style="{DynamicResource TextBoxStyleDefaultByTitle}"/>
+                            <TextBox Uid="{DynamicResource Operator}" Style="{DynamicResource TextBoxStyleDefaultByTitle}"/>
+                            <TextBox Uid="{DynamicResource Remark}" Style="{DynamicResource TextBoxStyleDefaultByTitle}"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Grid.Column="3">
+                            <Button  Content="{DynamicResource OK}" Command="{Binding SaveCommand}" Margin="0 20" Width="60"  Style="{StaticResource ButtonStyleDefault}"/>
+                            <Button  Content="{DynamicResource Cancel}" Command="{x:Static wpf:DialogHost.CloseDialogCommand}"  Width="60"  Style="{StaticResource ButtonStyleDel}"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <TextBox Text="{DynamicResource Result}" Grid.Row="4" Style="{DynamicResource TextBoxStyleLeftBor}"/>
+
+                <DataGrid Grid.Row="6" ItemsSource="{Binding ListGroups}" >
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn>
+                            <DataGridTemplateColumn.Header>
+                                <CheckBox Width="80" IsChecked="{Binding  DataContext.Check_ALL,RelativeSource={ RelativeSource Mode=FindAncestor,AncestorType=UserControl}}" 
+                                      FocusVisualStyle="{x:Null}" HorizontalAlignment="Center" Content="{DynamicResource CheckAll}"/>
+                            </DataGridTemplateColumn.Header>
+                            <DataGridTemplateColumn.CellTemplate >
+                                <DataTemplate>
+                                    <CheckBox   />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn   Binding="{Binding GroupId}" Width="*" Header="{DynamicResource The name of the solid}"  />
+                        <DataGridTextColumn  Width="*" Header="{DynamicResource The name of the liquid}"  />
+                        <DataGridTextColumn  Width="*" Header="{DynamicResource The adhesion work}"  />
+                        <DataGridTextColumn  Width="*" Header="{DynamicResource Spreading coefficient}"  />
+                        <DataGridTextColumn  Width="*" Header="{DynamicResource Adhesion tension}"  />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </controls:BoderContent>
+    </Grid>
+</UserControl>

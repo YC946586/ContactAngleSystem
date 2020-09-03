@@ -97,6 +97,10 @@
     <sys:String x:Key="ToDetect">ToDetect</sys:String>
     <sys:String x:Key="Default">Default</sys:String>
     <sys:String x:Key="Start measuring">Start measuring</sys:String>
+    <sys:String x:Key="To calculate">To calculate</sys:String>
+    <sys:String x:Key="resetDel">resetDel</sys:String>
+    <sys:String x:Key="Empty">Empty</sys:String>
+    
     <!--02圖-->
     <sys:String x:Key="AngleQuerySystem">Angle Query System</sys:String>
     <sys:String x:Key="TensionQuerySystem">Tension query system</sys:String>
@@ -213,4 +217,131 @@
     <sys:String x:Key="The second step">The second step</sys:String>
     <sys:String x:Key="The third step">The third step</sys:String>
     <sys:String x:Key="Pay attention to the prompt">注：设置好所有参数后，点击开始测量按钮自动回到主界面开始测量</sys:String>
+
+
+    <!--控制台设置-->
+    <sys:String x:Key="Console Settings">Console Settings</sys:String>
+    <sys:String x:Key="Find equipment">Find equipment</sys:String>
+    <sys:String x:Key="Open the equipment">Open the equipment</sys:String>
+    <sys:String x:Key="current site">current site</sys:String>
+    <sys:String x:Key="Binding shaft">Binding shaft</sys:String>
+    <sys:String x:Key="Binding lead">Binding lead(mm):</sys:String>
+    <sys:String x:Key="Binding">Binding</sys:String>
+    <sys:String x:Key="Can make">Can make</sys:String>
+    <sys:String x:Key="offline">offline</sys:String>
+    <sys:String x:Key="reset">reset</sys:String>
+    <sys:String x:Key="The callback feedback">The callback feedback</sys:String>
+    <sys:String x:Key="Load factory Settings">Load factory Settings</sys:String>
+    <sys:String x:Key="Change the password">Change the password</sys:String>
+    <sys:String x:Key="Drip control">Drip control Z’</sys:String>
+    <sys:String x:Key="The turntable">The turntable R</sys:String>
+    <sys:String x:Key="Total length of container">Total length of container</sys:String>
+    <sys:String x:Key="Total container capacity">Total container capacity</sys:String>
+    <sys:String x:Key="Absolute position">Absolute position</sys:String>
+    <sys:String x:Key="speedKzt">speed</sys:String>
+    <sys:String x:Key="site">site</sys:String>
+    <sys:String x:Key="model">model</sys:String>
+    <sys:String x:Key="firmware">firmware</sys:String>
+    <sys:String x:Key="shaft">shaft</sys:String>
+    <sys:String x:Key="lead">lead</sys:String>
+
+    <!--润湿性分析-->
+    <sys:String x:Key="WettabilityAnalysis">Wettability Analysis</sys:String>
+    <sys:String x:Key="Input information">Input information</sys:String>
+    <sys:String x:Key="Result">Result</sys:String>
+    <sys:String x:Key="CheckAll">CheckAll</sys:String>
+    <sys:String x:Key="The adhesion work">The adhesion work(mN/m)</sys:String>
+    <sys:String x:Key="Spreading coefficient">Spreading coefficient(mN/m)</sys:String>
+    <sys:String x:Key="Adhesion tension">Adhesion tension(mN/m)</sys:String>
+
+
+    <!--计算表面能-->
+    <sys:String x:Key="Calculated surface energy">Calculated surface energy</sys:String>
+    <sys:String x:Key="Method to choose">Method to choose</sys:String>
+    <sys:String x:Key="Two liquid method">Zisman Two liquid method</sys:String>
+    <sys:String x:Key="A method of liquid">Fowkes A method of liquid</sys:String>
+    <sys:String x:Key="liquid method">OWRK  liquid method</sys:String>
+    <sys:String x:Key="Three fluid method">Three fluid method </sys:String>
+    <sys:String x:Key="mea liquid method">Wu harmonic mean</sys:String>
+    <sys:String x:Key="EOS A method of liquid">EOS method of liquid</sys:String>
+    <sys:String x:Key="Extended Three fluid method">Extended Three fluid method</sys:String>
+    <sys:String x:Key="A liquid">A liquid</sys:String>
+    <sys:String x:Key="Liquid2">Liquid2</sys:String>
+    <sys:String x:Key="Calculate solid surface">Calculate solid surface</sys:String>
+    <sys:String x:Key="Liquid database changes">Liquid database changes</sys:String>
+    <sys:String x:Key="Export data">Export data</sys:String>
+    <sys:String x:Key="Serial number">Serial number</sys:String>
+
+
+    <sys:String x:Key="The dispersion component">The dispersion component</sys:String>
+    <sys:String x:Key="The polar components">The polar components</sys:String>
+    <sys:String x:Key="Van der Waals component">Van der Waals component</sys:String>
+    <sys:String x:Key="Lewis acid component">Lewis acid component</sys:String>
+    <sys:String x:Key="Lewis base component">Lewis base component</sys:String>
+    <sys:String x:Key="Hydrogen bonding force">Hydrogen bonding force</sys:String>
+    <sys:String x:Key="Query by date">Query by date</sys:String>
+    <sys:String x:Key="Query by measured value">Query by measured value</sys:String>
+    <sys:String x:Key="Query by operator">Query by operator</sys:String>
+    <sys:String x:Key="Query by sample">Query by sample</sys:String>
+    <sys:String x:Key="Delete current record">Delete current record</sys:String>
+    <sys:String x:Key="Delete all records">Delete all records</sys:String>
+    <sys:String x:Key="Year">Year</sys:String>
+    <sys:String x:Key="month">month</sys:String>
+    <sys:String x:Key="day">day</sys:String>
+    <sys:String x:Key="hours">hours</sys:String>
+    <sys:String x:Key="minutes">minutes</sys:String>
+    <sys:String x:Key="Liquid three">Liquid three</sys:String>
+
+    <!--//功能选择-->
+    <sys:String x:Key="Feature selection">Feature selection</sys:String>
+    <sys:String x:Key="Automatic fitting method for contact Angle">Automatic fitting method for contact Angle</sys:String>
+    <sys:String x:Key="Circle fitting">Circle fitting</sys:String>
+    <sys:String x:Key="Elliptic fitting">Elliptic fitting</sys:String>
+    <sys:String x:Key="LY - AP fitting">LY - AP fitting</sys:String>
+    <sys:String x:Key="LY - SD fitting">LY - SD fitting</sys:String>
+    <sys:String x:Key="The experimental diagram of contact Angle is automatically fitted">The experimental diagram of contact Angle is automatically fitted</sys:String>
+    <sys:String x:Key="Manual fitting of contact Angle">Manual fitting of contact Angle</sys:String>
+    <sys:String x:Key="Three point fitting circle">Three point fitting circle</sys:String>
+    <sys:String x:Key="Five points fit the ellipse">Five points fit the ellipse</sys:String>
+    <sys:String x:Key="Baseline fitting">Baseline fitting</sys:String>
+    <sys:String x:Key="Automatic baseline fitting (default)">Automatic baseline fitting (default)</sys:String>
+    <sys:String x:Key="Manually fit the horizontal/tilt baseline">Manually fit the horizontal/tilt baseline</sys:String>
+    <sys:String x:Key="Manually fitting the surface baseline">Manually fitting the surface baseline</sys:String>
+    <sys:String x:Key="Surface tension">Surface tension</sys:String>
+    <sys:String x:Key="Automatic fitting test">Automatic fitting test</sys:String>
+    <sys:String x:Key="The surface tension diagram was fitted automatically">The surface tension diagram was fitted automatically</sys:String>
+    <sys:String x:Key="Wettability analysis">Wettability analysis</sys:String>
+    <sys:String x:Key="The toolbar">The toolbar</sys:String>
+    <sys:String x:Key="Drop control Z">Drop control Z'</sys:String>
+    <sys:String x:Key="The turntable R">The turntable R</sys:String>
+    <sys:String x:Key="Note: check is displayed. Check is the default">Note: check is displayed. Check is the default</sys:String>
+
+    <!--//用戶管理-->
+    <sys:String x:Key="User management">User management</sys:String>
+    <sys:String x:Key="The serial number">The serial number</sys:String>
+    <sys:String x:Key="Login name">Login name</sys:String>
+    <sys:String x:Key="role">role</sys:String>
+    <sys:String x:Key="Creation time">Creation time</sys:String>
+    <sys:String x:Key="operation">operation</sys:String>
+
+    <!--//疑问层-->
+    <sys:String x:Key="The surface tension calculation must be imported into the test template!">The surface tension calculation must be imported into the test template!</sys:String>
+
+    <!--//版权声明-->
+    <sys:String x:Key="Copyright statement">Copyright statement</sys:String>
+    <sys:String x:Key="Guangdong Beidou Precision Instrument Co">Guangdong Beidou Precision Instrument Co., Ltd. owns all intellectual property rights of CAPSTV1.0 software. 
+                                                                                                    This computer program is protected by version law/Copyright Law and international conventions.Disseminating 
+                                                                                                    part or all of this procedure without written authorization may be subject to severe civil and criminal sanctions. 
+                                                                                                    And will receive the maximum possible prosecution within the law.</sys:String>
+
+    <!--//联系我们-->
+    <sys:String x:Key="Contact us">Contact us</sys:String>
+    <sys:String x:Key="Guangdong Beidou Precision Instrument Co. LTD">Guangdong Beidou Precision Instrument Co. LTD</sys:String>
+    <sys:String x:Key="Telephone">Telephone</sys:String>
+    <sys:String x:Key="fax">fax</sys:String>
+    <sys:String x:Key="The url">The url</sys:String>
+
+    <sys:String x:Key="Table interface measurement system Version1.0">Table interface measurement system Version1.0</sys:String>
+
+
 </ResourceDictionary>

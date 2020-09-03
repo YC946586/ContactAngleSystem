@@ -58,7 +58,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="YCCustomControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>.\YCCustomControl.dll</HintPath>
+      <HintPath>..\ContactAngleControl\LogicCore\Base\YCCustomControl.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -66,7 +66,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Content Include="YCCustomControl.dll" />
     <Page Include="Language\English.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

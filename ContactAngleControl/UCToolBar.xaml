@@ -63,6 +63,14 @@
 
         <Button Style="{StaticResource RadiusButton}" Click="Button_Click" Content="表面能界面" Tag="SurfaceEnergy" Height="22" Margin="10,0" VerticalContentAlignment="Center"/>
         <Button Style="{StaticResource RadiusButton}" Click="Button_Click" Content="试验设置" Tag="TestSet" Height="22" Margin="10,0" VerticalContentAlignment="Center"/>
+        <Button Style="{StaticResource RadiusButton}" Click="Button_Click" Content="控制台设置" Tag="ConsoleSettings" Height="22" Margin="10,0" VerticalContentAlignment="Center"/>
+        <Button Style="{StaticResource RadiusButton}" Click="Button_Click" Content="液态控制" Tag="LiquidSettings" Height="22" Margin="10,0" VerticalContentAlignment="Center"/>
+        <Button Style="{StaticResource RadiusButton}" Click="Button_Click" Content="润湿性分析" Tag="WettabilityAnalysis" Height="22" Margin="10,0" VerticalContentAlignment="Center"/>
+        <Button Style="{StaticResource RadiusButton}" Click="Button_Click" Content="計算表面能" Tag="CalculatedSurfaceEnergy" Height="22" Margin="10,0" VerticalContentAlignment="Center"/>
+        <Button Style="{StaticResource RadiusButton}" Click="Button_Click" Content="拟合参数设置" Tag="SettingParameters" Height="22" Margin="10,0" VerticalContentAlignment="Center"/>
+        <Button Style="{StaticResource RadiusButton}" Click="Button_Click" Content="功能选择" Tag="FeatureSelection" Height="22" Margin="10,0" VerticalContentAlignment="Center"/>
+        <Button Style="{StaticResource RadiusButton}" Click="Button_Click" Content="版权申明" Tag="CopyrightStatement" Height="22" Margin="10,0" VerticalContentAlignment="Center"/>
+
         
     </ToolBar>
 </UserControl>

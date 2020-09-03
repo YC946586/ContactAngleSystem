@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 
-131457873406
-
-33-1500313980
-741793801111
-UCFooter.xaml;UCHeader.xaml;UCMain.xaml;UCMenu.xaml;UCOperateMenu.xaml;UCToolBar.xaml;View\Template\MsgBox.xaml;View\UC\CameraSettings.xaml;View\UC\ContactAngle.xaml;View\UC\SurfaceEnergy.xaml;View\UC\SurfaceTension.xaml;View\UC\TestSet.xaml;View\Win\TestQueryPageView.xaml;
+271962186945
+1-685014497
+49-1097310697
+74-326371691
+UCFooter.xaml;UCHeader.xaml;UCMain.xaml;UCMenu.xaml;UCOperateMenu.xaml;UCToolBar.xaml;View\Template\MsgBox.xaml;View\UC\CalculatedView\CalculatedSurfaceEnergy.xaml;View\UC\CalculatedView\ContentPresenter\AMethodOfLiquid.xaml;View\UC\CalculatedView\ContentPresenter\EOSAmethodofliquid.xaml;View\UC\CalculatedView\ContentPresenter\ExtendedThreeFluidMethod.xaml;View\UC\CalculatedView\ContentPresenter\MeaLiquidMethod.xaml;View\UC\CalculatedView\ContentPresenter\ThreeFluidMethod.xaml;View\UC\CalculatedView\ContentPresenter\liquidMethod.xaml;View\UC\CalculatedView\ContentPresenter\Twoliquidmethod.xaml;View\UC\CameraSettings.xaml;View\UC\ConsoleSettings.xaml;View\UC\ContactAngle.xaml;View\UC\CopyrightStatement.xaml;View\UC\FeatureSelection.xaml;View\UC\LiquidSettings.xaml;View\UC\SettingParameters.xaml;View\UC\SurfaceEnergy.xaml;View\UC\SurfaceTension.xaml;View\UC\TestSet.xaml;View\UC\WettabilityAnalysis.xaml;View\Win\TestQueryPageView.xaml;
 
 True
 

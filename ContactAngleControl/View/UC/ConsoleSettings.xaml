@@ -1,0 +1,135 @@
+﻿<UserControl x:Class="ContactAngleControl.View.UC.ConsoleSettings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ContactAngleControl.View.UC" 
+             xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
+             xmlns:controls="clr-namespace:YCCustomControl.Controls;assembly=YCCustomControl"
+             xmlns:uc="clr-namespace:ContactAngleControl.ViewModel.UC"
+             mc:Ignorable="d" >
+    <UserControl.DataContext>
+        <uc:ConsoleSettingsViewModel/>
+    </UserControl.DataContext>
+    <Grid>
+        <controls:BoderContent Hander="{DynamicResource Console Settings}" Width="800" Height="750">
+            <Grid Margin="20 10 20 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="220"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid Margin="0 10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="{DynamicResource Console Settings}" VerticalAlignment="Center" Style="{StaticResource TextBlockStyleDefaultByHander}"/>
+                            <ComboBox  Style="{StaticResource StyleComboBoxDefault}"  Grid.Column="1"  Margin="10 0 0 0"/>
+                        </Grid>
+                     
+                        <DataGrid Grid.Row="1" ItemsSource="{Binding ListGroups}" Height="300">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn  Binding="{Binding GroupName}" Width="*" Header="{DynamicResource site}"  />
+                                <DataGridTextColumn   Binding="{Binding GroupId}" Width="105" Header="{DynamicResource model}"  />
+                                <DataGridTextColumn  Width="60" Header="{DynamicResource firmware}"  />
+                                <DataGridTextColumn  Width="60" Header="{DynamicResource shaft}"  />
+                                <DataGridTextColumn  Width="70" Header="{DynamicResource lead}"  />
+                                <DataGridTextColumn  Width="70" Header="{DynamicResource speedKzt}"  />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+    
+                    <StackPanel Orientation="Vertical" Grid.Column="1" Margin="30 0">
+                        <Button  Content="{DynamicResource Find equipment}" Width="170" Margin="10 0" Style="{StaticResource ButtonStyleDefault}"/>
+                        <Button  Content="{DynamicResource Open the equipment}" Width="170" Margin="10 15 10 23" Style="{StaticResource ButtonStyleEnabledFalse}"/>
+                        <TextBlock Text="{DynamicResource current site}" VerticalAlignment="Center" Style="{StaticResource TextBlockStyleDefaultByHander}"/>
+                        <TextBox  Style="{DynamicResource TextBoxStyleNormal}"  Width="170"/>
+                        <TextBlock Text="{DynamicResource Binding shaft}" VerticalAlignment="Center" Style="{StaticResource TextBlockStyleDefaultByHander}"/>
+                        <ComboBox  Style="{StaticResource StyleComboBoxDefault}"  Margin="10 0" Grid.Column="1" />
+                        <TextBlock Text="{DynamicResource Binding lead}" VerticalAlignment="Center" Style="{StaticResource TextBlockStyleDefaultByHander}"/>
+                        <TextBox  Style="{DynamicResource TextBoxStyleNormal}"  Width="170"/>
+                        <Button  Content="{DynamicResource Binding}" Width="80" Margin="0 0 10 0" HorizontalAlignment="Right" Style="{StaticResource ButtonStyleEnabledFalse}"/>
+                    </StackPanel>
+                </Grid>
+                
+                <StackPanel Orientation="Horizontal" Margin="0 10 0 0"  VerticalAlignment="Center" Grid.Row="1" HorizontalAlignment="Center">
+                    <Button  Content="{DynamicResource Can make}"  Style="{StaticResource ButtonStyleDefault}"/>
+                    <Button  Content="{DynamicResource offline}"  Style="{StaticResource ButtonStyleDefault}"/>
+                    <Button  Content="{DynamicResource reset}" Style="{StaticResource ButtonStyleDefault}"/>
+                    <Button  Content="{DynamicResource The callback feedback}"  Style="{StaticResource ButtonStyleEnabledFalse}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical"   Grid.Row="2" HorizontalAlignment="Center">
+                    <ListBox  x:Name="Listbox"  SelectedItem="{Binding SelectTab}"   HorizontalAlignment="Center"  Style="{DynamicResource ListBoxStyleTab}">
+                        <ListBoxItem Content="{DynamicResource Drip control}"/>
+                        <ListBoxItem Content="{DynamicResource The turntable}"/>
+                    </ListBox>
+
+                    <Grid  Visibility="{Binding ElementName=Listbox,Path=SelectedIndex,Converter={StaticResource Flag}}" >
+                        <StackPanel Orientation="Vertical"    Grid.Row="1" HorizontalAlignment="Center">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center"  >
+                                <TextBlock Text="{DynamicResource  Total length of container}" Style="{StaticResource TextBlockStyleDefaultByHander}"/>
+                                <TextBox  Style="{DynamicResource TextBoxStyleByAdapt}"   Width="210"   />
+                                <TextBlock  Text="mm" Style="{StaticResource TextBlockStyleDefault}"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center"  >
+                                <TextBlock Text="{DynamicResource  Total container capacity}" Style="{StaticResource TextBlockStyleDefaultByHander}"/>
+                                <TextBox  Style="{DynamicResource TextBoxStyleByAdapt}"   Width="210"   />
+                                <TextBlock  Text="ul" Style="{StaticResource TextBlockStyleDefault}"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center"  Margin="15 0 0 0" >
+                                <TextBlock Text="{DynamicResource  Absolute position}" Style="{StaticResource TextBlockStyleDefaultByHander}"/>
+                                <TextBox  Style="{DynamicResource TextBoxStyleByAdapt}"   Width="210"   />
+                                <TextBlock  Text="mm" Style="{StaticResource TextBlockStyleDefault}"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center"  Margin="15 0 0 0" >
+                                <TextBlock Text="{DynamicResource  Drip speedKzt}" Style="{StaticResource TextBlockStyleDefaultByHander}"/>
+                                <TextBox  Style="{DynamicResource TextBoxStyleByAdapt}"   Width="210"   />
+                                <TextBlock  Text="ul/min" Style="{StaticResource TextBlockStyleDefault}"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                  
+                    <Grid Visibility="{Binding ElementName=Listbox,Path=SelectedIndex,Converter={StaticResource Flag},ConverterParameter=LiquidSettings}"  >
+                        <StackPanel Orientation="Vertical"  Grid.Row="1" HorizontalAlignment="Center">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center"  Margin="30 0 0 0" >
+                                <TextBlock Text="{DynamicResource  speedKzt}" Style="{StaticResource TextBlockStyleDefaultByHander}"/>
+                                <TextBox  Style="{DynamicResource TextBoxStyleByAdapt}"   Width="210"   />
+                                <TextBlock  Text="ｏ/min" Style="{StaticResource TextBlockStyleDefault}"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center"  >
+                                <TextBlock Text="{DynamicResource  Absolute position}" Style="{StaticResource TextBlockStyleDefaultByHander}"/>
+                                <TextBox  Style="{DynamicResource TextBoxStyleByAdapt}"   Width="90"   />
+                                <TextBlock  Text="-" Style="{StaticResource TextBlockStyleDefault}"/>
+                                <TextBox  Style="{DynamicResource TextBoxStyleByAdapt}"   Width="90"   />
+                            </StackPanel>
+
+                        </StackPanel>
+
+                    </Grid>
+                   
+                </StackPanel>
+               
+                <StackPanel Orientation="Horizontal" Margin="0 10 0 0"  VerticalAlignment="Center" Grid.Row="3" HorizontalAlignment="Center">
+                    <Button  Content="{DynamicResource Load factory Settings}"  Width="120"  Style="{StaticResource ButtonStyleDefault}"/>
+                    <Button  Content="{DynamicResource Change the password}"    Style="{StaticResource ButtonStyleDefault}"/>
+                    <Button  Content="{DynamicResource OK}" Width="60"  Style="{StaticResource ButtonStyleEnabledFalse}"/>
+                    <Button  Content="{DynamicResource Cancel}" Command="{x:Static wpf:DialogHost.CloseDialogCommand}"  Width="60"  Style="{StaticResource ButtonStyleDel}"/>
+                </StackPanel>
+
+            </Grid>
+        </controls:BoderContent>
+    </Grid>
+</UserControl>

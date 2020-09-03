@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("yccustomcontrol.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("language/simplifiedchinese.xaml")]
 
 

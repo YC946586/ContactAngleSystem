@@ -84,6 +84,10 @@
     <sys:String x:Key="ToDetect">重新检测</sys:String>
     <sys:String x:Key="Default">恢复默认</sys:String>
     <sys:String x:Key="Start measuring">开始测量</sys:String>
+    <sys:String x:Key="To calculate">计算</sys:String>
+    <sys:String x:Key="resetDel">重置</sys:String>
+    <sys:String x:Key="Empty">清空</sys:String>
+    
     <!--02圖-->
     <sys:String x:Key="AngleQuerySystem">角度查询系统</sys:String>
     <sys:String x:Key="TensionQuerySystem">张力查询系统</sys:String>
@@ -204,4 +208,138 @@
     <sys:String x:Key="The second step">第二步</sys:String>
     <sys:String x:Key="The third step">第三步</sys:String>
     <sys:String x:Key="Pay attention to the prompt">注：设置好所有参数后，点击开始测量按钮自动回到主界面开始测量</sys:String>
+
+
+    <!--控制台设置-->
+    <sys:String x:Key="Console Settings">控制台设置</sys:String>
+    <sys:String x:Key="Find equipment">查找设备</sys:String>
+    <sys:String x:Key="Open the equipment">打开设备</sys:String>
+    <sys:String x:Key="current site">当前站点ID</sys:String>
+    <sys:String x:Key="Binding shaft">绑定轴</sys:String>
+    <sys:String x:Key="Binding lead">绑定导程(mm):</sys:String>
+    <sys:String x:Key="Binding">绑定</sys:String>
+    <sys:String x:Key="Can make">使能</sys:String>
+    <sys:String x:Key="offline">脱机</sys:String>
+    <sys:String x:Key="reset">清零</sys:String>
+    <sys:String x:Key="The callback feedback">回调反馈</sys:String>
+    <sys:String x:Key="Load factory Settings">载入出厂设置</sys:String>
+    <sys:String x:Key="Change the password">修改密码</sys:String>
+    <sys:String x:Key="Drip control">滴液控制Z</sys:String>
+    <sys:String x:Key="The turntable">旋转台R</sys:String>
+    <sys:String x:Key="Total length of container">容器总长度</sys:String>
+    <sys:String x:Key="Total container capacity">容器总容量</sys:String>
+    <sys:String x:Key="Absolute position">绝对位置</sys:String>
+    <sys:String x:Key="Drip speedKzt">滴液速度</sys:String>
+    <sys:String x:Key="speedKzt">速度</sys:String>
+    <sys:String x:Key="site">站点</sys:String>
+    <sys:String x:Key="model">型号</sys:String>
+    <sys:String x:Key="firmware">固件</sys:String>
+    <sys:String x:Key="shaft">轴</sys:String>
+    <sys:String x:Key="lead">导程</sys:String>
+    
+    <!--润湿性分析-->
+    <sys:String x:Key="WettabilityAnalysis">润湿性分析</sys:String>
+    <sys:String x:Key="Input information">录入信息</sys:String>
+    <sys:String x:Key="Result">分析结果</sys:String>
+    <sys:String x:Key="CheckAll">全选</sys:String>
+    <sys:String x:Key="The adhesion work">粘附功(mN/m)</sys:String>
+    <sys:String x:Key="Spreading coefficient">铺展系数(mN/m)</sys:String>
+    <sys:String x:Key="Adhesion tension">粘附张力(mN/m)</sys:String>
+
+    <!--计算表面能-->
+    <sys:String x:Key="Calculated surface energy">计算表面能</sys:String>
+    <sys:String x:Key="Method to choose">方法选择</sys:String>
+    <sys:String x:Key="Two liquid method">Zisman 二液法</sys:String>
+    <sys:String x:Key="A method of liquid">Fowkes一液法</sys:String>
+    <sys:String x:Key="liquid method">OWRK二液法</sys:String>
+    <sys:String x:Key="Three fluid method">Acid-Base Theory三液法</sys:String>
+    <sys:String x:Key="mea liquid method">Wu harmonic mean二液法</sys:String>
+    <sys:String x:Key="EOS A method of liquid">EOS一液法</sys:String>
+    <sys:String x:Key="Extended Three fluid method">Extended Fowkes三液法</sys:String>
+    <sys:String x:Key="A liquid">液体一</sys:String>
+    <sys:String x:Key="Liquid2">液体二</sys:String>
+    <sys:String x:Key="Liquid three">液体三</sys:String>
+    <sys:String x:Key="Calculate solid surface">计算固体表面自由能</sys:String>
+    <sys:String x:Key="Liquid database changes">液体信息库更改/添加</sys:String>
+    <sys:String x:Key="Export data">数据导出</sys:String>
+    <sys:String x:Key="Serial number">编号</sys:String>
+
+    <sys:String x:Key="The dispersion component">色散分量</sys:String>
+    <sys:String x:Key="The polar components">极性分量</sys:String>
+    <sys:String x:Key="Van der Waals component">范德华分量</sys:String>
+    <sys:String x:Key="Lewis acid component">路易斯酸分量</sys:String>
+    <sys:String x:Key="Lewis base component">路易斯碱分量</sys:String>
+    <sys:String x:Key="Hydrogen bonding force">氢键力</sys:String>
+    <sys:String x:Key="Query by date">按日期者查询</sys:String>
+    <sys:String x:Key="Query by measured value">按测量值查询</sys:String>
+    <sys:String x:Key="Query by operator">按操作者查询</sys:String>
+    <sys:String x:Key="Query by sample">按样品查询</sys:String>
+    <sys:String x:Key="Delete current record">删除当前记录</sys:String>
+    <sys:String x:Key="Delete all records">删除全部记录</sys:String>
+    <sys:String x:Key="Year">年</sys:String>
+    <sys:String x:Key="month">月</sys:String>
+    <sys:String x:Key="day">日</sys:String>
+    <sys:String x:Key="hours">小时</sys:String>
+    <sys:String x:Key="minutes">分钟</sys:String> 
+
+<!--//功能选择-->
+    <sys:String x:Key="Feature selection">功能选择</sys:String>
+    <sys:String x:Key="Automatic fitting method for contact Angle">接触角自动拟合法</sys:String>
+    <sys:String x:Key="Circle fitting">圆拟合法</sys:String>
+    <sys:String x:Key="Elliptic fitting">椭圆拟合法</sys:String>
+    <sys:String x:Key="LY - AP fitting">LY-AP拟合法</sys:String>
+    <sys:String x:Key="LY - SD fitting">LY-SD拟合法</sys:String>
+    <sys:String x:Key="The experimental diagram of contact Angle is automatically fitted">自动拟合接触角实验图</sys:String>
+    <sys:String x:Key="Manual fitting of contact Angle">接触角手动拟合法</sys:String>
+    <sys:String x:Key="Three point fitting circle">三点拟合圆</sys:String>
+    <sys:String x:Key="Five points fit the ellipse">五点拟合椭圆</sys:String>
+    
+    <sys:String x:Key="Baseline fitting">基线拟合</sys:String>
+    <sys:String x:Key="Automatic baseline fitting (default)">自动拟合基线（默认）</sys:String>
+    <sys:String x:Key="Manually fit the horizontal/tilt baseline">手动拟合水平/倾斜基线</sys:String>
+    <sys:String x:Key="Manually fitting the surface baseline">手动拟合曲面基线</sys:String>
+    <sys:String x:Key="Surface tension">表面张力</sys:String>
+    <sys:String x:Key="Automatic fitting test">自动拟合测试</sys:String>
+    <sys:String x:Key="The surface tension diagram was fitted automatically">自动拟合表面张力实验图</sys:String>
+    <sys:String x:Key="Wettability analysis">润湿性分析</sys:String>
+    
+    <sys:String x:Key="The toolbar">工具栏</sys:String>
+    <sys:String x:Key="Drop control Z">滴液控制Z</sys:String>
+    <sys:String x:Key="The turntable R">旋转台R</sys:String>
+    <sys:String x:Key="Note: check is displayed. Check is the default">注意：打勾即显示，默认都打勾</sys:String>
+
+    <!--//用戶管理-->
+    <sys:String x:Key="User management">用户管理</sys:String>
+    <sys:String x:Key="The serial number">序号</sys:String>
+    <sys:String x:Key="Login name">登录名</sys:String>
+    <sys:String x:Key="role">角色</sys:String>
+    <sys:String x:Key="Creation time">创建时间</sys:String>
+    <sys:String x:Key="operation">操作</sys:String>
+
+    <!--//疑问层-->
+    <sys:String x:Key="The surface tension calculation must be imported into the test template!">表面张力计算必须导入试验模板！</sys:String>
+
+    <!--//版权声明-->
+    <sys:String x:Key="Copyright statement">版权声明</sys:String>
+    <sys:String x:Key="Guangdong Beidou Precision Instrument Co">广东北斗精密仪器有限公司拥有CAPSTV1.0软件的所有知识产权，本计算机程序受版本法/著作权法和国际公约保护，
+                                                                未经书面授权擅自传播本程序的部分或者全部可能遭受严厉的民事刑事制裁。并将在法律允许的范围内收到最大可能的起诉。</sys:String>
+
+
+
+    <!--//联系我们-->
+    <sys:String x:Key="Contact us">联系我们</sys:String>
+    <sys:String x:Key="Guangdong Beidou Precision Instrument Co. LTD">广东北斗精密仪器有限公司</sys:String>
+    <sys:String x:Key="Telephone">电话</sys:String>
+    <sys:String x:Key="fax">传真</sys:String>
+    <sys:String x:Key="The url">网址</sys:String>
+
+    <sys:String x:Key="Table interface measurement system Version1.0">表界面测量系统Version1.0</sys:String>
+    <!--拟合参数设置-->
+    <sys:String x:Key="Setting of fitting parameters">拟合参数设置</sys:String>
+    <sys:String x:Key="Circle fitting method to fit points">圆拟合法拟合点数</sys:String>
+    <sys:String x:Key="Elliptic fitting method to fit points">椭圆拟合法拟合点数</sys:String>
+    <sys:String x:Key="Ly ap Fitting method fitting points">LY-Ap拟合法拟合点数</sys:String>
+    <sys:String x:Key="ly sd Fitting method fitting points">LY-SD拟合法拟合点数</sys:String>
+    <sys:String x:Key="baseline points">自动拟合基线点数</sys:String>
+
 </ResourceDictionary>

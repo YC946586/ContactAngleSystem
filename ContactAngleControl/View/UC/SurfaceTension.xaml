@@ -64,9 +64,9 @@
                                     <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>
                                     <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>
                                     <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>
-                                    <TextBox  Uid="{DynamicResource G cm3}"  Style="{DynamicResource TextBoxStyleDefaultByDescribe}"/>
-                                    <TextBox  Uid="{DynamicResource G cm3}"  Style="{DynamicResource TextBoxStyleDefaultByDescribe}"/>
-                                    <TextBox   Uid="{DynamicResource mm}"  Style="{DynamicResource TextBoxStyleDefaultByDescribe}"/>
+                                    <TextBox  Uid="{DynamicResource G cm3}"  Style="{DynamicResource TextBoxStyleDefaultByDescribe2}"/>
+                                    <TextBox  Uid="{DynamicResource G cm3}" Margin="0 10"  Style="{DynamicResource TextBoxStyleDefaultByDescribe2}"/>
+                                    <TextBox   Uid="{DynamicResource mm}" Margin="0 0 0 13"  Style="{DynamicResource TextBoxStyleDefaultByDescribe}"/>
                                     <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>
                                     <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>
                                     <TextBox  Style="{DynamicResource TextBoxStyleNormal}"/>

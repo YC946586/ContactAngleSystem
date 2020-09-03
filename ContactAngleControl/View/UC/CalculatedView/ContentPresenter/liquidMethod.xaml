@@ -1,0 +1,95 @@
+﻿<UserControl x:Class="ContactAngleControl.View.UC.CalculatedView.ContentPresenter.liquidMethod"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ContactAngleControl.View.UC.CalculatedView.ContentPresenter"
+             xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
+             xmlns:controls="clr-namespace:YCCustomControl.Controls;assembly=YCCustomControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock Text="{DynamicResource A liquid}" Style="{StaticResource TextBlockStyleDefault}"/>
+                <ComboBox  Style="{StaticResource StyleComboBoxDefault}" Width="100" Margin="10 0"/>
+                <controls:TitleTextBox Title="{DynamicResource  SurfaceTension}"   Describe="MN/M"/>
+                <controls:TitleTextBox Title="{DynamicResource  The polar components}"  Margin="10 0" Describe="MN/M"/>
+                <controls:TitleTextBox Title="{DynamicResource  The dispersion component}" Describe="MN/M"/>
+                <controls:TitleTextBox Title="{DynamicResource  Contact Angle}" Describe="ｏ" Margin="10 0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock Text="{DynamicResource Liquid2}" Style="{StaticResource TextBlockStyleDefault}"/>
+                <ComboBox  Style="{StaticResource StyleComboBoxDefault}" Width="100" Margin="10 0"/>
+                <controls:TitleTextBox Title="{DynamicResource  SurfaceTension}"   Describe="MN/M"/>
+                <controls:TitleTextBox Title="{DynamicResource  The polar components}" Margin="10 0" Describe="MN/M"/>
+                <controls:TitleTextBox Title="{DynamicResource  The dispersion component}" Describe="MN/M"/>
+                <controls:TitleTextBox Title="{DynamicResource  Contact Angle}" Describe="ｏ" Margin="10 0"/>
+            </StackPanel>
+        </StackPanel>
+
+
+
+        <Grid Grid.Row="1" Margin="0 10 0 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="390"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Vertical">
+                <Button Content="{DynamicResource Calculate solid surface}"  Width="250" HorizontalAlignment="Left"  Margin="0 0 20 0"  Style="{StaticResource ButtonStyleDefaultByNoWidth}"/>
+                <controls:TitleTextBox Title="{DynamicResource Solid surface energy}"  Style="{StaticResource TitleTextBoxNow}"   Describe="MN/M"/>
+                <StackPanel Orientation="Horizontal">
+                    <controls:TitleTextBox Title="{DynamicResource The polar components}"  Margin="7 0 0 0" Style="{StaticResource TitleTextBoxNow}"    Describe="MN/M"/>
+                    <controls:TitleTextBox   Title="{DynamicResource  The dispersion component}" Style="{StaticResource TitleTextBoxNow}"  Describe="MN/M"/>
+                </StackPanel>
+
+                <TextBox Text="{DynamicResource Liquid database changes}" Margin="0 10 " Style="{DynamicResource TextBoxStyleLeftBor}"/>
+                <Border BorderBrush="#CCCCCC" BorderThickness="1">
+                    <StackPanel Orientation="Vertical" Margin="5">
+                        <StackPanel Orientation="Horizontal">
+                            <controls:TitleTextBox Title="{DynamicResource  A liquid}" Style="{StaticResource TitleTextBoxNow}" Margin="7 0 0 0"  />
+                            <controls:TitleTextBox Title="{DynamicResource  SurfaceTension}" Style="{StaticResource TitleTextBoxNow}"     Describe="MN/M"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <controls:TitleTextBox Title="{DynamicResource The polar components}"  Style="{StaticResource TitleTextBoxNow}"    Describe="MN/M"/>
+                            <controls:TitleTextBox   Title="{DynamicResource  The dispersion component}"  Margin="3 0 0 0"  Style="{StaticResource TitleTextBoxNow}"  Describe="MN/M"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <controls:TitleTextBox Title="{DynamicResource  Liquid2}" Style="{StaticResource TitleTextBoxNow}"  Margin="7 0 0 0"  />
+                            <controls:TitleTextBox Title="{DynamicResource  SurfaceTension}"  Style="{StaticResource TitleTextBoxNow}"    Describe="MN/M"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <controls:TitleTextBox Title="{DynamicResource The polar components}" Style="{StaticResource TitleTextBoxNow}"     Describe="MN/M"/>
+                            <controls:TitleTextBox   Title="{DynamicResource  The dispersion component}"   Margin="3 0 0 0"  Style="{StaticResource TitleTextBoxNow}"   Describe="MN/M"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0 15"  VerticalAlignment="Center" Grid.Row="3" HorizontalAlignment="Center">
+                            <Button  Content="{DynamicResource Add}"   Width="60"  Style="{StaticResource ButtonStyleDefault}"/>
+                            <Button  Content="{DynamicResource Edit}" Width="60"  Style="{StaticResource ButtonStyleDefault}"/>
+                            <Button  Content="{DynamicResource Cancel}" Command="{x:Static wpf:DialogHost.CloseDialogCommand}"  Width="60"  Style="{StaticResource ButtonStyleDel}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+            <Border Grid.Column="1" BorderBrush="#cccccc" BorderThickness="1"  Height="490" Margin="20 0 0 0">
+                <DataGrid  Margin="10" ItemsSource="{Binding ListGroups}" >
+                    <DataGrid.Columns>
+                        <DataGridTextColumn   Binding="{Binding GroupId}" Width="*" Header="{DynamicResource  Serial number}"  />
+                        <DataGridTextColumn  Width="*" Header="{DynamicResource Surface energy}"  />
+                        <DataGridTextColumn  Width="*" Header="{DynamicResource Estimation method}"  />
+                        <DataGridTextColumn  Width="*" Header="{DynamicResource Contact Angle1}"  />
+                        <DataGridTextColumn  Width="*" Header="{DynamicResource Contact Angle2}"  />
+                        <DataGridTextColumn  Width="*" Header="{DynamicResource The dispersion component}"  />
+                        <DataGridTextColumn  Width="*" Header="{DynamicResource The polar components}"  />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+
+        </Grid>
+    </Grid>
+</UserControl>

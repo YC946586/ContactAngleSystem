@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="ContactAngleControl.View.UC.CalculatedView.CalculatedSurfaceEnergy"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ContactAngleControl.View.UC.CalculatedView" 
+             xmlns:controls="clr-namespace:YCCustomControl.Controls;assembly=YCCustomControl"
+              xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
+             xmlns:contentpresenter="clr-namespace:ContactAngleControl.View.UC.CalculatedView.ContentPresenter"
+             mc:Ignorable="d" 
+             >
+    <Grid>
+        <controls:BoderContent Hander="{DynamicResource Calculated surface energy}" Width="1250" Height="800">
+            <Grid Margin="20 10 20 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="650"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <TextBox Text="{DynamicResource Method to choose}" Style="{DynamicResource TextBoxStyleLeftBor}"/>
+                <TabControl Grid.Row="1" Style="{DynamicResource TabControlStyleRadioButton}">
+                    <TabItem Header="{DynamicResource Two liquid method}" >
+                        <contentpresenter:Twoliquidmethod/>
+                    </TabItem>
+                    <TabItem Header="{DynamicResource A method of liquid}" >
+                        <contentpresenter:AMethodOfLiquid/>
+                    </TabItem>
+                    <TabItem Header="{DynamicResource liquid method}">
+                        <contentpresenter:liquidMethod/>
+                    </TabItem>
+                    <TabItem Header="{DynamicResource Three fluid method}">
+                        <contentpresenter:ThreeFluidMethod/>
+                    </TabItem>
+                    <TabItem Header="{DynamicResource mea liquid method}" >
+                        <contentpresenter:MeaLiquidMethod/>
+                    </TabItem>
+                    <TabItem Header="{DynamicResource EOS A method of liquid}">
+                        <contentpresenter:EOSAmethodofliquid/>
+                    </TabItem>
+                    <TabItem Header="{DynamicResource Extended Three fluid method}" >
+                        <contentpresenter:ExtendedThreeFluidMethod/>
+                    </TabItem>
+                </TabControl>
+                <Grid Grid.Row="2">
+                    <StackPanel Orientation="Horizontal" Margin="0 10 0 0"  VerticalAlignment="Center" Grid.Row="2" HorizontalAlignment="Center">
+                        <Button  Content="{DynamicResource Export data}"  Width="120"  Style="{StaticResource ButtonStyleDefault}"/>
+                        <Button  Content="{DynamicResource Empty}"    Style="{StaticResource ButtonStyleDefault}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button  Content="{DynamicResource OK}" Width="60"  Style="{StaticResource ButtonStyleEnabledFalse}"/>
+                        <Button  Content="{DynamicResource Cancel}" Command="{x:Static wpf:DialogHost.CloseDialogCommand}"  Width="60"  Style="{StaticResource ButtonStyleDel}"/>
+                    </StackPanel>
+                 
+                </Grid>
+                
+
+            </Grid>
+        </controls:BoderContent>
+    </Grid>
+</UserControl>
