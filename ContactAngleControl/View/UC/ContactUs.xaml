@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="ContactAngleControl.View.UC.ContactUs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ContactAngleControl.View.UC" 
+             xmlns:controls="clr-namespace:YCCustomControl.Controls;assembly=YCCustomControl"
+             mc:Ignorable="d" 
+            >
+    <Grid>
+        <controls:BoderContent Hander="{DynamicResource Contact us}" HorizontalAlignment="Center">
+            <Grid Margin="20 15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="130"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="/ContactAngleControl;component/Img/图层 2.png"/>
+                <StackPanel Orientation="Vertical" Grid.Column="1">
+                    <TextBlock Text="{DynamicResource CompanyName}" Margin="0" HorizontalAlignment="Left" Style="{DynamicResource TextBlockStyleDefault}"/>
+                    <TextBlock HorizontalAlignment="Left" Style="{DynamicResource TextBlockStyleDefault}">
+                         <Run Text="{DynamicResource Telephone}" />
+                        <Run Text="0769-82005869"/>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="0" Style="{DynamicResource TextBlockStyleDefault}">
+                         <Run Text="{DynamicResource fax}" />
+                        <Run Text="0769-82005869"/>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Style="{DynamicResource TextBlockStyleDefault}">
+                         <Run Text="{DynamicResource The url}" />
+                        <Run Text="www.Precise-test.com"/>
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+        </controls:BoderContent>
+    </Grid>
+</UserControl>

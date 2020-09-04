@@ -73,7 +73,7 @@
     <sys:String x:Key="Edit">编辑</sys:String>
     <sys:String x:Key="Delete">刪除</sys:String>
     <sys:String x:Key="Export">导出</sys:String>
-    <sys:String x:Key="OK">確定</sys:String>
+    <sys:String x:Key="OK">确定</sys:String>
     <sys:String x:Key="Cancel">取消</sys:String>
     <sys:String x:Key="New">新建</sys:String>
     <sys:String x:Key="Open">打开</sys:String>
@@ -93,7 +93,7 @@
     <sys:String x:Key="TensionQuerySystem">张力查询系统</sys:String>
     <sys:String x:Key="SurfaceEnergQuerySystem">表面能查询系统</sys:String>
     <sys:String x:Key="DeleteCurrentRecord">删除当前记录</sys:String>
-    <sys:String x:Key="Deleteall">刪除全部記錄</sys:String>
+    <sys:String x:Key="Deleteall">刪除全部记录</sys:String>
     <sys:String x:Key="All">全部</sys:String>
     <sys:String x:Key="number">序号</sys:String>
     <sys:String x:Key="Thetestdate">测试日期</sys:String>
@@ -329,9 +329,9 @@
     <!--//联系我们-->
     <sys:String x:Key="Contact us">联系我们</sys:String>
     <sys:String x:Key="Guangdong Beidou Precision Instrument Co. LTD">广东北斗精密仪器有限公司</sys:String>
-    <sys:String x:Key="Telephone">电话</sys:String>
-    <sys:String x:Key="fax">传真</sys:String>
-    <sys:String x:Key="The url">网址</sys:String>
+    <sys:String x:Key="Telephone">电话：</sys:String>
+    <sys:String x:Key="fax">传真：</sys:String>
+    <sys:String x:Key="The url">网址：</sys:String>
 
     <sys:String x:Key="Table interface measurement system Version1.0">表界面测量系统Version1.0</sys:String>
     <!--拟合参数设置-->
@@ -342,4 +342,8 @@
     <sys:String x:Key="ly sd Fitting method fitting points">LY-SD拟合法拟合点数</sys:String>
     <sys:String x:Key="baseline points">自动拟合基线点数</sys:String>
 
+    <sys:String x:Key="The sample name">样品名称</sys:String>
+    <sys:String x:Key="Measured mean">≤测量平均值≤</sys:String>
+
+    
 </ResourceDictionary>

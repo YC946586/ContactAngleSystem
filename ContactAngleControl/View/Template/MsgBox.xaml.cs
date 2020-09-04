@@ -51,7 +51,12 @@ namespace ContactAngleControl.View.Template
         {
             if (view == null) return false;
             object taskResult = await DialogHost.Show(view, "RootDialog"); //位于顶级窗口
-            return (bool)taskResult;
+            if (taskResult!=null)
+            {
+                return (bool)taskResult;
+            }
+            return false;
+
         }
     }
 }

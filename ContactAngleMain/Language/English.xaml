@@ -343,5 +343,6 @@
 
     <sys:String x:Key="Table interface measurement system Version1.0">Table interface measurement system Version1.0</sys:String>
 
-
+    <sys:String x:Key="The sample name">The sample name</sys:String>
+    <sys:String x:Key="Measured mean">≤Measured mean≤</sys:String>
 </ResourceDictionary>

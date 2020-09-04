@@ -1,5 +1,6 @@
 ﻿using ContactAngleControl.LogicCore.Common;
 using ContactAngleControl.LogicCore.Interface;
+using ContactAngleControl.View.Win;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,6 +43,19 @@ namespace ContactAngleControl
 
                 throw;
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            TestQueryPageView view = new TestQueryPageView();
+            view.Show();
+        }
+
+
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            _ = Msg.Question("Test");
         }
     }
 }

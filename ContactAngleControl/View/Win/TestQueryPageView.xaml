@@ -5,28 +5,123 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
         xmlns:uc="clr-namespace:ContactAngleControl.ViewModel.UC" 
         xmlns:contactanglecontrol="clr-namespace:ContactAngleControl"
-        mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+        mc:Ignorable="d"  WindowStyle="None" AllowsTransparency="True"
+         WindowStartupLocation="CenterScreen"
+            Width="1366" Height="768">
     <Window.DataContext>
         <uc:TestQueryPageViewModel/>
     </Window.DataContext>
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="49"/>
-            <RowDefinition Height="55"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <contactanglecontrol:UCHeader/>
-        <ListBox   Grid.Row="1" SelectedIndex="0" SelectedItem="{Binding SelectTab}"  
+        <Grid  >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="49"/>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="130"/>
+            </Grid.RowDefinitions>
+            <contactanglecontrol:UCHeader/>
+            <ListBox   Grid.Row="1" SelectedIndex="0" SelectedItem="{Binding SelectTab}"  
                    ItemContainerStyle="{DynamicResource ListBoxItemStyleTab}" BorderThickness="0">
-            <ListBoxItem Content="{DynamicResource AngleQuerySystem}"/>
-            <ListBoxItem Content="{DynamicResource TensionQuerySystem}"/>
-            <ListBoxItem Content="{DynamicResource SurfaceEnergQuerySystem}"/>
-            <ListBox.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <StackPanel Orientation="Horizontal"/>
-                </ItemsPanelTemplate>
-            </ListBox.ItemsPanel>
-        </ListBox>
+                <ListBoxItem Content="{DynamicResource AngleQuerySystem}"/>
+                <ListBoxItem Content="{DynamicResource TensionQuerySystem}"/>
+                <ListBoxItem Content="{DynamicResource SurfaceEnergQuerySystem}"/>
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+            </ListBox>
+
+            <DataGrid Grid.Row="2" ItemsSource="{Binding ListGroups}" Margin="15 0">
+                <DataGrid.Columns>
+                    <DataGridTextColumn   Width="*" Header="{DynamicResource number}"  />
+                    <DataGridTextColumn   Width="*" Header="{DynamicResource Thetestdate}"  />
+                    <DataGridTextColumn   Width="*" Header="{DynamicResource The test of time}"  />
+                    <DataGridTextColumn   Width="*" Header="{DynamicResource The operator}"  />
+                    <DataGridTextColumn   Width="*" Header="{DynamicResource Sample number}"  />
+                    <DataGridTextColumn   Width="*" Header="{DynamicResource The name of the solid}"  />
+                    <DataGridTextColumn   Width="*" Header="{DynamicResource The left contact Angle}"  />
+                    <DataGridTextColumn   Width="*" Header="{DynamicResource Right contact Angle}"  />
+                    <DataGridTextColumn   Width="*" Header="{DynamicResource Differential contact Angle}"  />
+                    <DataGridTextColumn   Width="*" Header="{DynamicResource Evaluation contact Angle}"  />
+                    <DataGridTextColumn   Width="*" Header="{DynamicResource A few lines of inclination}"  />
+                    <DataGridTextColumn   Width="*" Header="{DynamicResource Forward Angle}"  />
+                    <DataGridTextColumn   Width="*" Header="{DynamicResource Receding Angle}"  />
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.Header>
+                            <CheckBox Width="80" IsChecked="{Binding  DataContext.Check_ALL,RelativeSource={ RelativeSource Mode=FindAncestor,AncestorType=UserControl}}" 
+                                      FocusVisualStyle="{x:Null}" HorizontalAlignment="Center" Content="{DynamicResource CheckAll}"/>
+                        </DataGridTemplateColumn.Header>
+                        <DataGridTemplateColumn.CellTemplate >
+                            <DataTemplate>
+                                <CheckBox   />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Grid Grid.Row="3" Margin="15 0">
+                <Button Content="{DynamicResource Export}" HorizontalAlignment="Left" Style="{DynamicResource ButtonStyleDefault}"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button  Content="{DynamicResource DeleteCurrentRecord}"  Style="{StaticResource ButtonStyleDel}"/>
+                    <Button  Content="{DynamicResource Deleteall}"  Style="{StaticResource ButtonStyleDel}"/>
+                </StackPanel>
+            </Grid>
+
+            <Border BorderBrush="#cccccc" BorderThickness="1" Grid.Row="4" Margin="15">
+                <Grid  Margin="5 10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="{DynamicResource Query by date}" HorizontalAlignment="Left" Margin="0" Style="{DynamicResource TextBlockStyleDefault}"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox  Style="{DynamicResource TextBoxStyleWindth}"/>
+                            <TextBlock Text="{DynamicResource Year}" Foreground="#666666" Style="{DynamicResource TextBlockStyleDefault}"/>
+                            <TextBox  Style="{DynamicResource TextBoxStyleWindth}"/>
+                            <TextBlock Text="{DynamicResource month}" Foreground="#666666" Style="{DynamicResource TextBlockStyleDefault}"/>
+                            <TextBox  Style="{DynamicResource TextBoxStyleWindth}"/>
+                            <TextBlock Text="{DynamicResource day}" Foreground="#666666" Style="{DynamicResource TextBlockStyleDefault}"/>
+                            <TextBox  Style="{DynamicResource TextBoxStyleWindth}"/>
+                            <TextBlock Text="{DynamicResource hours}" Foreground="#666666" Style="{DynamicResource TextBlockStyleDefault}"/>
+                            <TextBox  Style="{DynamicResource TextBoxStyleWindth}"/>
+                            <TextBlock Text="{DynamicResource minutes}" Foreground="#666666" Style="{DynamicResource TextBlockStyleDefault}"/>
+                            <Button Content="{DynamicResource Query}" Width="60" Height="28" HorizontalAlignment="Left" Style="{DynamicResource ButtonStyleDefault}"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Grid.Column="1">
+                        <TextBlock Text="{DynamicResource Query by measured value}" Margin="0" HorizontalAlignment="Left" Style="{DynamicResource TextBlockStyleDefault}"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox  Style="{DynamicResource TextBoxStyleWindth}"/>
+                            <TextBlock Text="{DynamicResource Measured mean}" Foreground="#666666" Style="{DynamicResource TextBlockStyleDefault}"/>
+                            <TextBox  Style="{DynamicResource TextBoxStyleWindth}"/>
+                            <Button Content="{DynamicResource Query}" Width="60" Height="28" HorizontalAlignment="Left" Style="{DynamicResource ButtonStyleDefault}"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Grid.Column="2">
+                        <TextBlock Text="{DynamicResource Query by operator}" Margin="0" HorizontalAlignment="Left" Style="{DynamicResource TextBlockStyleDefault}"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{DynamicResource The operator}" Foreground="#666666" Style="{DynamicResource TextBlockStyleDefault}"/>
+                            <TextBox  Style="{DynamicResource TextBoxStyleWindth}"/>
+                            <Button Content="{DynamicResource Query}" Width="60" Height="28" HorizontalAlignment="Left" Style="{DynamicResource ButtonStyleDefault}"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Grid.Column="3">
+                        <TextBlock Text="{DynamicResource Query by sample}" Margin="0" HorizontalAlignment="Left" Style="{DynamicResource TextBlockStyleDefault}"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{DynamicResource The sample name}" Foreground="#666666" Style="{DynamicResource TextBlockStyleDefault}"/>
+                            <TextBox  Style="{DynamicResource TextBoxStyleWindth}"/>
+                            <Button Content="{DynamicResource Query}" Width="60" Height="28" HorizontalAlignment="Left" Style="{DynamicResource ButtonStyleDefault}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+      
     </Grid>
 </Window>

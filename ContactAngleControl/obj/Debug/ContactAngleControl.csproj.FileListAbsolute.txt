@@ -93,3 +93,9 @@ E:\个人项目\UiView\ContactAngleSystem\ContactAngleControl\obj\Debug\View\UC\
 E:\个人项目\UiView\ContactAngleSystem\ContactAngleControl\obj\Debug\View\UC\FeatureSelection.baml
 E:\个人项目\UiView\ContactAngleSystem\ContactAngleControl\obj\Debug\View\UC\CopyrightStatement.g.cs
 E:\个人项目\UiView\ContactAngleSystem\ContactAngleControl\obj\Debug\View\UC\CopyrightStatement.baml
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleControl\obj\Debug\View\UC\ContactUs.g.cs
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleControl\obj\Debug\View\UC\ShowCompany.g.cs
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleControl\obj\Debug\View\UC\UserManagement.g.cs
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleControl\obj\Debug\View\UC\ContactUs.baml
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleControl\obj\Debug\View\UC\ShowCompany.baml
+E:\个人项目\UiView\ContactAngleSystem\ContactAngleControl\obj\Debug\View\UC\UserManagement.baml

@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="ContactAngleControl.View.UC.UserManagement"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ContactAngleControl.View.UC"
+             xmlns:controls="clr-namespace:YCCustomControl.Controls;assembly=YCCustomControl"
+             mc:Ignorable="d" 
+            >
+    <Grid>
+        <controls:BoderContent Hander="{DynamicResource User management}" Width="430"   HorizontalAlignment="Center">
+            <Grid Margin="20 10 20 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="280"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBox  Style="{DynamicResource TextBoxStyleNormal}" Width="150" />
+
+                        <Button  Content="{DynamicResource Query}" Width="60" Height="28" Style="{StaticResource ButtonStyleDefault}"/>
+                        <Button  Content="{DynamicResource Add}" Width="60" Height="28" Style="{StaticResource ButtonStyleDefault}"/>
+                    </StackPanel>
+                </Grid>
+                <DataGrid Grid.Row="1" ItemsSource="{Binding ListGroups}" Margin="10 0 10 20">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn   Width="*" Header="{DynamicResource The serial number}"  />
+                        <DataGridTextColumn   Width="*" Header="{DynamicResource Login name}"  />
+                        <DataGridTextColumn   Width="*" Header="{DynamicResource role}"  />
+                        <DataGridTextColumn   Width="70" Header="{DynamicResource Creation time}"  />
+                        <DataGridTextColumn   Width="*" Header="{DynamicResource operation}"  />
+                        <DataGridTemplateColumn Width="130" Header="操作">
+                            <DataGridTemplateColumn.CellTemplate >
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Button  Content="{DynamicResource Edit}" Width="60" Height="28" Style="{StaticResource ButtonStyleDefault}"/>
+                                        <Button  Content="{DynamicResource Delete}" Margin="10 0 0 0 " Width="60" Height="28" Style="{StaticResource ButtonStyleDel}"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+
+            </Grid>
+        </controls:BoderContent>
+    </Grid>
+</UserControl>

@@ -83,6 +83,7 @@
     <Compile Include="LogicCore\Common\AutofacAttribute.cs" />
     <Compile Include="LogicCore\Common\AutofacLocator.cs" />
     <Compile Include="LogicCore\Common\BootStrapper.cs" />
+    <Compile Include="LogicCore\Common\Msg.cs" />
     <Compile Include="LogicCore\Common\ServiceProvider.cs" />
     <Compile Include="LogicCore\Interface\IAutoFacLocator.cs" />
     <Compile Include="LogicCore\Interface\IModel.cs" />
@@ -120,7 +121,7 @@
     <Compile Include="UCToolBar.xaml.cs">
       <DependentUpon>UCToolBar.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\MsgBoxViewModel.cs" />
     <Compile Include="ViewModel\UC\ConsoleSettingsViewModel.cs" />
     <Compile Include="ViewModel\UC\ContactAngleViewModel.cs" />
     <Compile Include="ViewModel\UC\FeatureSelectionViewModel.cs" />
@@ -163,6 +164,9 @@
     <Compile Include="View\UC\ContactAngle.xaml.cs">
       <DependentUpon>ContactAngle.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\UC\ContactUs.xaml.cs">
+      <DependentUpon>ContactUs.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\UC\CopyrightStatement.xaml.cs">
       <DependentUpon>CopyrightStatement.xaml</DependentUpon>
     </Compile>
@@ -175,6 +179,9 @@
     <Compile Include="View\UC\SettingParameters.xaml.cs">
       <DependentUpon>SettingParameters.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\UC\ShowCompany.xaml.cs">
+      <DependentUpon>ShowCompany.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\UC\SurfaceEnergy.xaml.cs">
       <DependentUpon>SurfaceEnergy.xaml</DependentUpon>
     </Compile>
@@ -183,6 +190,9 @@
     </Compile>
     <Compile Include="View\UC\TestSet.xaml.cs">
       <DependentUpon>TestSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC\UserManagement.xaml.cs">
+      <DependentUpon>UserManagement.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\UC\WettabilityAnalysis.xaml.cs">
       <DependentUpon>WettabilityAnalysis.xaml</DependentUpon>
@@ -273,6 +283,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\UC\ContactUs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\UC\CopyrightStatement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -289,6 +303,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\UC\ShowCompany.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\UC\SurfaceEnergy.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -298,6 +316,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\UC\TestSet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UC\UserManagement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -407,6 +429,8 @@
     <Resource Include="Img\Main\Slider.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Img\图层 2.png" />
+    <Resource Include="Img\Main\警告.png" />
     <Content Include="LogicCore\Base\YCCustomControl.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
