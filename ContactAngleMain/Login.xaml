@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ContactAngleMain"
+        xmlns:loca1="clr-namespace:YCCustomControl.Resources;assembly=YCCustomControl"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         mc:Ignorable="d"  AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen" Icon="Images/logo.ico"
         Title="Login" Height="768" Width="1366">
     <Grid>
@@ -31,7 +33,12 @@
                 <TextBlock Text="用户名" FontFamily="Microsoft YaHei" Margin="0 5" Foreground="#333333" FontSize="14"/>
                 <TextBox Style="{DynamicResource TextBoxStyleDefault}" Height="35"></TextBox>
                 <TextBlock Text="密码" FontFamily="Microsoft YaHei" Margin="0 5" Foreground="#333333" FontSize="14"/>
-                <TextBox Style="{DynamicResource TextBoxStyleDefault}" Height="35"></TextBox>
+                <PasswordBox  Margin="0 25" Style="{DynamicResource PassworldLoginStyle}"    Height="35"  
+                           loca1:PasswordBoxHelper.Password="{Binding Path=Password,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                    <i:Interaction.Behaviors>
+                        <loca1:PasswordBoxBehavior/>
+                    </i:Interaction.Behaviors>
+                </PasswordBox>
                 <TextBlock Text="验证码" FontFamily="Microsoft YaHei" Margin="0 5" Foreground="#333333" FontSize="14"/>
                 <StackPanel Orientation="Horizontal">
                     <TextBox Style="{DynamicResource TextBoxStyleDefault}" Height="35" Width="170" HorizontalAlignment="Left"></TextBox>

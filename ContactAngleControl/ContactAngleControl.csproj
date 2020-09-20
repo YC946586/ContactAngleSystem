@@ -72,10 +72,6 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="YCCustomControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>LogicCore\Base\YCCustomControl.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LogicCore\Base\BaseView.cs" />
@@ -369,6 +365,10 @@
     <ProjectReference Include="..\ContactAngleModel\ContactAngleEntity.csproj">
       <Project>{E4B45252-3572-47C7-B38C-C3A222AC7470}</Project>
       <Name>ContactAngleEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YCCustomControl\YCCustomControl\YCCustomControl.csproj">
+      <Project>{45799085-10b5-4602-a7a6-309a29a3ef8d}</Project>
+      <Name>YCCustomControl</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

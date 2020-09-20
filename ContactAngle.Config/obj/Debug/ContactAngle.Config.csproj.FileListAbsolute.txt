@@ -7,3 +7,4 @@ E:\个人项目\UiView\ContactAngleSystem\ContactAngle.Config\bin\Debug\ContactA
 E:\个人项目\UiView\ContactAngleSystem\ContactAngle.Config\obj\Debug\ContactAngle.Config.csproj.CoreCompileInputs.cache
 E:\个人项目\UiView\ContactAngleSystem\ContactAngle.Config\obj\Debug\ContactAngle.Config.dll
 E:\个人项目\UiView\ContactAngleSystem\ContactAngle.Config\obj\Debug\ContactAngle.Config.pdb
+E:\个人项目\UiView\ContactAngleSystem\ContactAngle.Config\obj\Debug\ContactAngle.Config.csprojAssemblyReference.cache

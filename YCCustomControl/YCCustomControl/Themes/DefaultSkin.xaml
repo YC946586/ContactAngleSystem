@@ -1,0 +1,183 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:YCCustomControl"
+     xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
+    xmlns:loca="clr-namespace:YCCustomControl.Controls" 
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+    xmlns:converters="clr-namespace:YCCustomControl.Converters">
+
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Flipper.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/YCCustomControl;component/Styles/ButtonBaseStyle.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/YCCustomControl;component/Styles/TextBaseStyle.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/YCCustomControl;component/Styles/ContentBaseStyle.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/YCCustomControl;component/Styles/CheckBaseStyle.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/YCCustomControl;component/Styles/DategridBaseStyle.xaml"/>
+        
+    </ResourceDictionary.MergedDictionaries>
+
+    <converters:FlagConverter x:Key="Flag"/>
+    
+    <Style  TargetType="{x:Type loca:BoderContent}">
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type loca:BoderContent}" >
+                    <Border CornerRadius="11" Background="White">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Border BorderThickness=" 0 0 0 1" BorderBrush="#CCCCCC" Background="White">
+                                <Border.InputBindings>
+                                    <MouseBinding MouseAction="LeftClick"  Command="{x:Static wpf:DialogHost.CloseDialogCommand}" />
+                                </Border.InputBindings>
+                                <Grid>
+                                    <TextBlock FontSize="18" FontFamily="Microsoft YaHei" Margin="20 0 0 0" FontWeight="Bold"  Foreground="#333333" VerticalAlignment="{TemplateBinding VerticalAlignment}" 
+                                           Text="{TemplateBinding Hander}" HorizontalAlignment="{TemplateBinding HorizontalAlignment}"/>
+                                    <wpf:PackIcon Kind="Close" Width="30" Height="30" Margin="0 5 10 0"  Cursor="Hand" HorizontalAlignment="Right"
+                                                     Foreground="Black" VerticalAlignment="Center">
+                                        <i:Interaction.Triggers>
+                                            <i:EventTrigger EventName="MouseLeftButtonDown">
+                                                <i:InvokeCommandAction Command="{x:Static wpf:DialogHost.CloseDialogCommand}" />
+                                            </i:EventTrigger>
+                                        </i:Interaction.Triggers>
+                                    </wpf:PackIcon>
+
+                                </Grid>
+                            </Border>
+                          
+
+                            <ContentPresenter  Grid.Row="1" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                            />
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <Style  TargetType="{x:Type loca:TitleTextBox}">
+        <Setter Property="Background" Value="#ECEFF4"/>
+        <Setter Property="Width" Value="210"/>
+        <Setter Property="Height" Value="35"/>
+        <Setter Property="BorderBrush" Value="#E8E9EB"/>
+        <Setter Property="Margin" Value="0 5"/>
+        <Setter Property="Foreground" Value="#333333"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="2 0 0 0"/>
+        <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="AllowDrop" Value="true"/>
+        <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type loca:TitleTextBox}">
+                    <Grid Margin="0">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{TemplateBinding  Title}"  Width="{TemplateBinding TitleWidth}" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Right"  Style="{DynamicResource TextBlockStyleDefault}"/>
+                            <Grid Grid.Column="1"  Margin="2 0 0 0">
+                                <TextBox Style="{DynamicResource TextBoxStyleDefaultByDescribe}" Height="35" Margin="0" Width="145" Uid="{TemplateBinding Describe}"/>
+                            </Grid>
+                        </StackPanel>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true"/>
+                    <Condition Property="IsSelectionActive" Value="false"/>
+                </MultiTrigger.Conditions>
+                <Setter Property="SelectionBrush" Value="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}"/>
+            </MultiTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="TitleTextBoxNow"  TargetType="{x:Type loca:TitleTextBox}">
+        <Setter Property="Background" Value="#ECEFF4"/>
+        <Setter Property="Width" Value="210"/>
+        <Setter Property="Height" Value="35"/>
+        <Setter Property="BorderBrush" Value="#E8E9EB"/>
+        <Setter Property="Foreground" Value="#333333"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="2 0 0 0"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="AllowDrop" Value="true"/>
+        <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type loca:TitleTextBox}">
+                    <Grid Margin="0">
+                        <StackPanel Orientation="Horizontal" Height="40"> 
+                            <TextBlock Text="{TemplateBinding  Title}"  Width="{TemplateBinding TitleWidth}" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Right"  Style="{DynamicResource TextBlockStyleDefault}"/>
+                            <Grid Grid.Column="1"  Margin="2 0 0 0">
+                                <TextBox Style="{DynamicResource TextBoxStyleDefaultByDescri}" Margin="0" Width="110" Uid="{TemplateBinding Describe}"/>
+                            </Grid>
+                        </StackPanel>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true"/>
+                    <Condition Property="IsSelectionActive" Value="false"/>
+                </MultiTrigger.Conditions>
+                <Setter Property="SelectionBrush" Value="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}"/>
+            </MultiTrigger>
+        </Style.Triggers>
+    </Style>
+
+
+    <Style x:Key="PassworldLoginStyle"  TargetType="{x:Type PasswordBox}">
+        <Setter Property="Background" Value="#ECEFF4"/>
+        <Setter Property="BorderBrush" Value="#E8E9EB"/>
+        <Setter Property="Foreground" Value="#333333"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="2 0 0 0"/>
+        <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="AllowDrop" Value="true"/>
+        <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+        <Setter Property="PasswordChar" Value="●"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type PasswordBox}">
+                    <Border   BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5"   Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}">
+                        <ScrollViewer x:Name="PART_ContentHost"  Padding="2 0 0 0"  VerticalAlignment="{TemplateBinding VerticalAlignment}" Grid.Column="1" />
+                    </Border>
+                    <!--<ControlTemplate.Triggers>
+                        <Trigger Property="loca1:PasswordBoxHelper.PasswordLength" Value="0">
+                            <Setter TargetName="WaterMark" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>-->
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
